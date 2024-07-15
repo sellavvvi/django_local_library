@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Teachers</title>
+</head>
+<body>
+
+     <!-- 'Montserrat' sans-serif -->
+
+     <style>
+          .teachers_main_photo{
+               position: absolute;
+               filter: blur(2px);
+               left: 0%;
+               top: 27%;
+          }
+
+          .h1_our_instructors{
+               position: absolute;
+               font-weight: bold;
+               color: #ffffff;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 55px;
+               top: 40%;
+               left: 32%;
+          }
+
+          .h4_our_expertise{
+               position: absolute;
+               left: 8%;
+               top: 90%;
+               color: #3A5BCC;
+               font-weight: bold;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 16px;
+          }
+
+          .h1_our_expertise{
+               position: absolute;
+               left: 8%;
+               top: 93%;
+               color: #000000;
+               font-weight: bold;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 50px;
+          }
+
+          .span_our_expertise{
+               position: absolute;
+               left: 8%;
+               top: 110%;
+               color: #000000;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 18px;
+          }
+
+          .progress-bar-container{
+               position: absolute;
+               top: 102%;
+               left: 55%;
+               width: 40%;
+               height: 2%;
+               background-color: #afa7a798;
+               border-radius: 25px;
+               overflow: hidden;
+          }
+
+          .h3_digital_marketing_skill{
+               position: absolute;
+               top: 95%;
+               left: 55%;
+               font-family: 'Montserrat', sans-serif;
+               color: #000000;
+               font-size: 18px;
+               font-weight: normal;
+          }
+
+          .progress-bar-digital-marketing-skill{
+               position: relative;
+               height: 100%;
+               background-color: #3A5BCC;
+               width: 50%; /* Початковий рівень заповненості */
+               border-radius: 25px 0 0 25px;
+          }
+
+          .progress-bar-container-2{
+               position: absolute;
+               top: 112%;
+               left: 55%;
+               width: 40%;
+               height: 2%;
+               background-color: #afa7a798;
+               border-radius: 25px;
+               overflow: hidden;
+          }
+
+          .h3_web_development_skill{
+               position: absolute;
+               top: 105%;
+               left: 55%;
+               font-family: 'Montserrat', sans-serif;
+               color: #000000;
+               font-size: 18px;
+               font-weight: normal;
+          }
+
+          .progress-bar-web-development-skill{
+               position: relative;
+               height: 100%;
+               background-color: #3A5BCC;
+               width: 50%; /* Початковий рівень заповненості */
+               border-radius: 25px 0 0 25px;
+          }
+
+          .progress-bar-container-3{
+               position: absolute;
+               top: 122%;
+               left: 55%;
+               width: 40%;
+               height: 2%;
+               background-color: #afa7a798;
+               border-radius: 25px;
+               overflow: hidden;
+          }
+
+          .h3_graphic_design_skill{
+               position: absolute;
+               top: 115%;
+               left: 55%;
+               font-family: 'Montserrat', sans-serif;
+               color: #000000;
+               font-size: 18px;
+               font-weight: normal;
+          }
+
+          .progress-bar-graphic-design-skill{
+               position: relative;
+               height: 100%;
+               background-color: #3A5BCC;
+               width: 50%; /* Початковий рівень заповненості */
+               border-radius: 25px 0 0 25px;
+          }
+
+          .h4_our_facilities{
+               position: absolute;
+               left: 9%;
+               top: 150%;
+               color: #3A5BCC;
+               font-weight: bold;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 16px;
+          }
+
+          .h1_online_learning_facilities{
+               position: absolute;
+               left: 9%;
+               top: 153%;
+               color: #000000;
+               font-weight: bold;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 50px;
+          }
+
+          .span_under_online_learning_facilities{
+               position: absolute;
+               left: 9%;
+               top: 170%;
+               color: #000000;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 18px;
+          }
+
+          .img_easy_to_use{
+               position: absolute;
+               left: 9%;
+               top: 197%;
+               border-radius: 20px;
+          }
+
+          .h1_easy_to_use_platform{
+               position: absolute;
+               left: 9%;
+               top: 250%;
+               font-size: 25px;
+               font-family: 'Montserrat', sans-serif;
+               font-weight: bold;
+          }
+
+          .span_easy_to_use{
+               position: absolute;
+               left: 9%;
+               top: 265%;
+               font-size: 18px;
+               font-family: 'Montserrat', sans-serif;
+               font-weight: normal;
+               line-height: 26px;
+          }
+
+          .img_live_session{
+               position: absolute;
+               left: 40%;
+               top: 197%;
+               border-radius: 20px;
+          }
+
+          .h1_live_sessions{
+               position: absolute;
+               left: 40%;
+               top: 250%;
+               font-size: 25px;
+               font-family: 'Montserrat', sans-serif;
+               font-weight: bold;
+          }
+
+          .span_live_sessions{
+               position: absolute;
+               left: 40%;
+               top: 260%;
+               font-size: 18px;
+               font-family: 'Montserrat', sans-serif;
+               font-weight: normal;
+               line-height: 26px;
+          }
+
+          .img_learning_materials{
+               position: absolute;
+               left: 71%;
+               top: 197%;
+               border-radius: 20px;
+          }
+
+          .h1_learning_materials{
+               position: absolute;
+               left: 71%;
+               top: 250%;
+               font-size: 25px;
+               font-family: 'Montserrat', sans-serif;
+               font-weight: bold;
+          }
+
+          .span_learning_materials{
+               position: absolute;
+               left: 71%;
+               top: 260%;
+               font-size: 18px;
+               font-family: 'Montserrat', sans-serif;
+               font-weight: normal;
+               line-height: 26px;
+          }
+
+          .photo_end_classes{
+               position: absolute;
+               top: 305%;
+               left: 0%;
+               filter: blur(2px);
+          }
+
+          .contact_us_in_the_end{
+               position: absolute;
+               top: 312%;
+               left: 9%;
+               font-size: 40px;
+               font-weight: bold;
+               font-family: 'Montserrat', sans-serif;
+               color: #ffffff;
+          }
+
+          .under_span_under_in_the_end{
+               position: absolute;
+               top: 333%;
+               left: 9%;
+               font-size: 18px;
+               font-family: 'Montserrat', sans-serif;
+               line-height: 30px;
+               color: #ffffff;
+          }
+
+          .contact_us_button_in_end{
+               position: absolute;
+               top: 330%;
+               left: 76%;
+               background-color: #3A5BCC;
+               font-family: 'Montserrat', sans-serif;
+               padding: 16px 23px;
+               font-size: 18px;
+               color: #ffffff;
+               font-weight: bold;
+               border-width: 0px;
+          }
+
+          .contact_us_button_in_end:hover{
+               background-color: #28408f;
+          }
+
+          .h4_our_classes_div{
+               position: absolute;
+               top: 390%;
+               left: 9%;
+               color: #3A5BCC;
+               font-family: 'Montserrat', sans-serif;
+               font-weight: bold;
+               font-size: 18px;
+          }
+
+          .h1_our_classes{
+               position: absolute;
+               top: 395%;
+               left: 9%;
+               color: #000000;
+               font-family: 'Montserrat', sans-serif;
+               font-weight: bold;
+               font-size: 45px;
+          }
+
+          .span_our_classes{
+               position: absolute;
+               top: 412%;
+               left: 9%;
+               color: #000000;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 18px;
+               line-height: 27px;
+          }
+
+          .button_see_all_classes{
+               position: absolute;
+               top: 407%;
+               left: 77%;
+               padding: 20px 25px;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 15px;
+               background-color: #3A5BCC;
+               border-width: 0px;
+               color: #ffffff;
+          }
+
+          .button_see_all_classes:hover{
+               background-color: #28408f;
+          }
+
+          .check_mark_first{
+               position: absolute;
+               top: 445%;
+               left: 13%;
+          }
+          
+          .check_mark_1_ux_ui_design{
+               position: absolute;
+               top: 453%;
+               left: 13%;
+               font-weight: bold;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 26px;
+          }
+
+          .span_check_mark_1_ux_ui_design{
+               position: absolute;
+               top: 465%;
+               left: 13%;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 18px;
+          }
+
+          .learn_more_ux_ui_design{
+               position: absolute;
+               top: 513%;
+               left: 13%;
+               color: #3A5BCC;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 17px;
+          }
+
+          .check_mark_second{
+               position: absolute;
+               top: 445%;
+               left: 41%;
+          }
+
+          .h1_mobile_app_development{
+               position: absolute;
+               top: 453%;
+               left: 41%;
+               font-weight: bold;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 26px;
+          }
+
+          .span_mobile_app_development{
+               position: absolute;
+               top: 470%;
+               left: 41%;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 18px;
+          }
+
+          .span_learn_more_our_mobile_app{
+               position: absolute;
+               top: 511%;
+               left: 41%;
+               color: #3A5BCC;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 17px;
+          }
+
+          .check_mark_third{
+               position: absolute;
+               top: 445%;
+               left: 71%;
+          }
+
+          .h1_web_development{
+               position: absolute;
+               top: 453%;
+               left: 71%;
+               font-weight: bold;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 26px;
+          }
+
+          .span_our_web_development{
+               position: absolute;
+               top: 464%;
+               left: 71%;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 18px;
+          }
+
+          .span_learn_more_our_web_development{
+               position: absolute;
+               top: 522%;
+               left: 71%;
+               color: #3A5BCC;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 17px;
+          }
+
+          .end_div_page_teach{
+               position: absolute;
+               top: 540%;
+               width: 100%;
+               height: 450px;
+               background-color: #000000;
+          }
+
+          .self_school_in_end{
+               position: absolute;
+               top: 120px;
+               left: 12%;
+               color: #ffffff;
+               font-size: 22px;
+               font-weight: bold;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .facebook_end{
+               position: absolute;
+               top: 33%;
+               left: 10.7%;
+          }
+
+          .instagram_end{
+               position: absolute;
+               top: 33%;
+               left: 14.7%;
+          }
+
+          .telegram_end{
+               position: absolute;
+               top: 33%;
+               left: 18.7%;
+          }
+
+          .pages-span{
+               position: absolute;
+               top: 122px;
+               left: 550px;
+               color: #ffffff;
+               font-size: 22px;
+               font-weight: bold;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .about_us_end{
+               position: absolute;
+               color: #ffffff;
+               top: 180px;
+               left: 570px;
+               font-size: 20px;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .classes_end{
+               position: absolute;
+               color: #ffffff;
+               top: 225px;
+               left: 570px;
+               font-size: 20px;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .teachers_end{
+               position: absolute;
+               color: #ffffff;
+               top: 270px;
+               left: 570px;
+               font-size: 20px;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .FAQ_end{
+               position: absolute;
+               color: #ffffff;
+               top: 315px;
+               left: 570px;
+               font-size: 20px;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .contact_us_end{
+               position: absolute;
+               color: #ffffff;
+               top: 360px;
+               left: 570px;
+               font-size: 20px;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .main_contact_end{
+               position: absolute;
+               top: 122px;
+               left: 885px;
+               color: #ffffff;
+               font-size: 22px;
+               font-weight: bold;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .number_end{
+               position: absolute;
+               color: #ffffff;
+               top: 180px;
+               left: 940px;
+               font-size: 20px;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .time_work_end{
+               position: absolute;
+               color: #ffffff;
+               top: 230px;
+               left: 940px;
+               font-size: 20px;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .email_end{
+               position: absolute;
+               color: #ffffff;
+               top: 280px;
+               left: 940px;
+               font-size: 20px;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .phone_end{
+               position: absolute;
+               top: 167px;
+               left: 885px;
+          }
+
+          .clock_end{
+               position: absolute;
+               top: 215px;
+               left: 885px;
+          }
+
+          .email_end_logo{
+               position: absolute;
+               top: 275px;
+               left: 895px;
+          }
+
+          .a_self_school_span{
+               color: #000000;
+          }
+     </style>
+
+     {% include 'sch/base.html' with color_for_teachers="blue" %}
+     <div class="main_photo_teachers">
+          <img class="teachers_main_photo" src="static/image/main_teachers.jpg" width="1348px" height="290px" alt="main teachers">
+          <h1 class="h1_our_instructors">Наші інструктори</h1>
+     </div>
+     <div class="our_expertise">
+          <h4 class="h4_our_expertise">Наш досвід</h4>
+          <h1 class="h1_our_expertise">Наш досвід</h1>
+          <span class="span_our_expertise">Наш досвід полягає в наданні високоякісних онлайн-курсів, <br>
+               які відповідають сучасному світу, пропонуючи <br>
+               учням навички та знання, необхідні для <br>
+               досягнення успіху в обраній сфері.</span>
+     </div>
+     <div class="progress-bar-container">
+          <div class="progress-bar-digital-marketing-skill" id="progress-bar-1"></div>
+     </div>
+     <h3 class="h3_digital_marketing_skill">Навички вивчення Python</h3>
+     <div class="progress-bar-container-2">
+          <div class="progress-bar-web-development-skill" id="progress-bar-2"></div>
+     </div>
+     <h3 class="h3_web_development_skill">Навички веб-розробки</h3>
+     <div class="progress-bar-container-3">
+          <div class="progress-bar-graphic-design-skill" id="progress-bar-3"></div>
+     </div>
+     <h3 class="h3_graphic_design_skill">Навички графічного дизайну</h3>
+     <div class="our_facilities_div">
+          <h4 class="h4_our_facilities">Наші можливості</h4>
+          <h1 class="h1_online_learning_facilities">Засоби онлайн-навчання</h1>
+          <span class="span_under_online_learning_facilities">Наші засоби онлайн-навчання створені, щоб надати <br>
+               вам корисний і захоплюючий досвід навчання, <br>
+               пропонуючи передові інструменти та технології, <br>
+               які допоможуть вам досягти успіху</span>
+     </div>
+     <div class="div_with_photo3">
+          <img class="img_easy_to_use" src="static/image/easy_to_use.webp" width="320px" alt="easy_to_use">
+          <h1 class="h1_easy_to_use_platform">Проста у використанні <br> платформа</h1>
+          <span class="span_easy_to_use">Наша проста у використанні <br>
+               онлайн-платформа навчання дозволяє <br>
+               вам отримати доступ до своїх <br>
+               курсів і навчальних матеріалів <br>
+               з будь-якого місця та в <br> 
+               будь-який час.</span>
+
+          <img class="img_live_session" src="static/image/live_sessio_new.jpg" width="320px" alt="live session">
+          <h1 class="h1_live_sessions">Живі сесії</h1>
+          <span class="span_live_sessions">Приєднуйтеся до онлайн-занять з <br>
+               інструкторами, що дозволить вам <br>
+               спілкуватися з однолітками та <br>
+               отримати цінну інформацію та <br>
+               відгуки.</span>
+
+          <img class="img_learning_materials" src="static/image/learning_materials.webp" width="320px" alt="learning_materials">
+          <h1 class="h1_learning_materials">Навчальні матеріали</h1>
+          <span class="span_learning_materials">Отримуйте доступ до низки <br>
+               навчальних матеріалів, зокрема <br>
+               відео, тестів та інтерактивних <br>
+               вправ, розроблених, щоб зміцнити <br>
+               ваше навчання та допомогти вам <br>
+               застосувати свої навички в <br>
+               реальному світі.</span>
+     </div>
+     <div class="end_photo_contact_us_teach">
+          <img class="photo_end_classes" src="static/image/end_classes.webp" width="1349px" height="400px" alt="end classes">
+          <h1 class="contact_us_in_the_end">Зв'яжіться з нами для отримання <br> додаткової інформації</h1>
+          <span class="under_span_under_in_the_end">Маєте запитання щодо наших курсів чи програм? Потрібна допомога <br>     
+               у виборі правильного курсу? Наші студентські консультанти тут, <br>   
+               щоб допомогти. Зв’яжіться з нами електронною поштою або телефоном, <br>   
+               і ми з радістю вам допоможемо.</span>
+          <button class="contact_us_button_in_end">Зв'язатися з нами</button>
+     </div>
+     <div class="our_classes_div">
+          <h4 class="h4_our_classes_div">Наш клас</h4>
+          <h1 class="h1_our_classes">Наші заняття</h1>
+          <span class="span_our_classes">Наші заняття призначені для студентів усіх рівнів, <br>
+               від початківців до експертів, забезпечуючи <br>
+               комплексний досвід навчання, який охоплює <br>
+               всі аспекти веб-розробки та графічного <br>
+               дизайну.</span>
+          <button onclick="redirect_classes()" class="button_see_all_classes">Переглянути всі класи</button>
+     </div>
+     <div class="check_marks3">
+          <img class="check_mark_first" src="static/image/check_mark.webp" width="45px" alt="check mark">
+          <h1 class="check_mark_1_ux_ui_design">UX/UI Дизайн</h1>
+          <span class="span_check_mark_1_ux_ui_design">Наші курси дизайну UX/UI <br>
+               навчать вас створювати <br>
+               орієнтовані на користувача <br>
+               красиві та функціональні <br>
+               дизайни. Навчіться диригувати <br>
+               дослідження користувачів, <br>
+               створення каркасів і  <br>
+               прототипів, а також <br>
+               розробка інтуїтивно <br>
+               зрозумілих інтерфейсів <br>
+               для веб і мобільних <br>
+               додатків.</span>
+
+          <img class="check_mark_second" src="static/image/check_mark.webp" width="45px" alt="check mark">
+          <h1 class="h1_mobile_app_development">Розробка <br> мобільних додатків</h1>
+          <span class="span_mobile_app_development">Наш курс «Розробка <br>
+               мобільних додатків» навчить <br>
+               вас створювати власні та <br>
+               гібридні програми для  <br>
+               пристроїв iOS та Android. <br>
+               Дізнайтеся, як <br>
+               використовувати такі  <br>
+               фреймворки, як React Native, <br>
+               Ionic і Flutter, для  <br>
+               створення потужних  <br>
+               мобільних додатків.</span>
+
+          <img class="check_mark_third" src="static/image/check_mark.webp" width="45px" alt="check mark">
+          <h1 class="h1_web_development">Веб-розробка</h1>
+          <span class="span_our_web_development">Наш курс веб-розробки <br>
+               навчить вас створювати <br>
+               та підтримувати веб-сайти <br>
+               за допомогою новітніх  <br>
+               технологій, зокрема HTML, <br>
+               CSS, JavaScript тощо.  <br>
+               Дізнайтеся, як створювати <br>
+               адаптивний дизайн,  <br>
+               розробляти динамічні <br>
+               веб-додатки та  <br>
+               оптимізувати продуктивність <br>
+               веб-сайту.</span>
+     </div>
+     {% include "sch/end_div.html" with classes_for_teachers="trues" %}
+
+     <script>
+          // Функція для зміни рівня заповненості прогрес бару
+          function setProgress_first(percent) {
+              const progressBar = document.getElementById('progress-bar-1');
+              progressBar.style.width = percent + '%';
+          }
+      
+          // Приклад використання
+          setProgress_first(97); // Встановлюємо рівень заповненості на 75%
+
+          function setProgress_second(percent) {
+              const progressBar = document.getElementById('progress-bar-2');
+              progressBar.style.width = percent + '%';
+          }
+      
+          setProgress_second(87); 
+
+          function setProgress_third(percent) {
+              const progressBar = document.getElementById('progress-bar-3');
+              progressBar.style.width = percent + '%';
+          }
+      
+          setProgress_third(90);
+
+          function redirect_classes() {
+               window.location.href = "{% url 'classes' %}"
+          }
+
+      </script>
+     
+</body>
+</html>

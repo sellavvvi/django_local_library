@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Classes</title>
+</head>
+<body>
+
+     <style>
+          .classes_main_photo{
+               position: absolute;
+               filter: blur(2px);
+               left: 0%;
+               top: 27%;
+          }
+
+          .classes_in_main_photo{
+               position: absolute;
+               font-weight: bold;
+               color: #ffffff;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 55px;
+               top: 44%;
+               left: 41%;
+          }
+
+          .h4_our_class{
+               position: absolute;
+               top: 100%;
+               left: 47%;
+               font-family: 'Montserrat', sans-serif;
+               color: #3A5BCC;
+               font-weight: bold;
+          }
+
+          .h1_our_online_courses{
+               position: absolute;
+               top: 105%;
+               left: 34%;
+               font-family: 'Montserrat', sans-serif;
+               color: #000000;
+               font-weight: bold;
+               font-size: 43px;
+          }
+
+          .span_under_h1_our_courses{
+               position: absolute;
+               text-align: center;
+               top: 122%;
+               left: 35.2%;
+               font-family: 'Montserrat', sans-serif;
+               color: #000000;
+               font-size: 18px;
+               line-height: 25px;
+          }
+
+          .frame_graphic_design_first{
+               position: absolute;
+               border-radius: 20px;
+               border-width: 0px;
+               background-color: #3A5BCC;
+               width: 330px;
+               height: 520px;
+               top: 160%;
+               left: 8%;
+          }
+
+          .h1_graphic_design{
+               position: absolute;
+               color: #ffffff;
+               font-family: 'Montserrat', sans-serif;
+               font-weight: bold;
+               font-size: 30px;
+               top: 165%;
+               left: 12%;
+          }
+
+          .span_under_graphic_design{
+               position: absolute;
+               color: #ffffff;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 18px;
+               top: 184%;
+               left: 12%;
+               line-height: 25px;
+          }
+
+          .span_learn_more_under_graphic_design{
+               position: absolute;
+               top: 111%;
+               left: 0%;
+               color: #ffffff;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 18px;
+          }
+
+          .h1_data_science{
+               position: absolute;
+               color: #000000;
+               font-family: 'Montserrat', sans-serif;
+               font-weight: bold;
+               font-size: 30px;
+               top: -110px;
+               left: 400px;
+               line-height: 35px;
+               white-space: nowrap; /* Забирає всі переноси строки */
+          }
+
+          .span_under_h1_data_science{
+               position: absolute;
+               color: #000000;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 18px;
+               top: -36px;
+               left: 400px;
+               line-height: 25px;
+               white-space: nowrap;
+          }
+
+          .learn_more_under_data_science{
+               position: absolute;
+               color: #3A5BCC;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 18px;
+               top: 270px;
+               left: 400px;
+               white-space: nowrap;
+          }
+
+          .h1_digital_marketing{
+               position: absolute;
+               color: #000000;
+               font-family: 'Montserrat', sans-serif;
+               font-weight: bold;
+               font-size: 30px;
+               top: -110px;
+               left: 785px;
+               line-height: 35px;
+          }
+
+          .span_under_h1_digital_marketing{
+               position: absolute;
+               color: #000000;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 18px;
+               top: -5px;
+               left: 785px;
+               line-height: 25px;
+               white-space: nowrap;
+          }
+
+          .learn_more_under_digital_marketing{
+               position: absolute;
+               color: #3A5BCC;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 18px;
+               top: 300px;
+               left: 785px;
+               white-space: nowrap;
+          }
+
+          .h1_ux_ui_design{
+               position: absolute;
+               color: #000000;
+               font-family: 'Montserrat', sans-serif;
+               font-weight: bold;
+               font-size: 30px;
+               top: 155%;
+               left: 75%;
+               white-space: nowrap;
+          }
+
+          .span_ui_ux_design{
+               position: absolute;
+               color: #000000;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 18px;
+               top: 180%;
+               left: 75%;
+               white-space: nowrap;
+          }
+
+          .h1_mobile_app_development{
+               position: absolute;
+               color: #000000;
+               font-family: 'Montserrat', sans-serif;
+               font-weight: bold;
+               font-size: 30px;
+               top: 153%;
+               left: 620px;
+               line-height: 35px;
+               white-space: nowrap; /* Забирає всі переноси строки */
+          }
+
+          .span_mobile_app_development{
+               position: absolute;
+               color: #000000;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 18px;
+               top: 191%;
+               left: 620px;
+               white-space: nowrap;
+          }
+
+          .h1_web_development{
+               position: absolute;
+               color: #000000;
+               font-family: 'Montserrat', sans-serif;
+               font-weight: bold;
+               font-size: 30px;
+               top: -110px;
+               left: 785px;
+               line-height: 35px;
+          }
+
+          .span_web_development{
+               position: absolute;
+               color: #000000;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 18px;
+               top: -5px;
+               left: 785px;
+               line-height: 25px;
+               white-space: nowrap;
+          }
+
+          .schedule_h4{
+               position: absolute;
+               top: 350%;
+               left: 47%;
+               font-family: 'Montserrat', sans-serif;
+               color: #3A5BCC;
+               font-weight: bold;
+          }
+
+          .h1_out_class_schedule{
+               position: absolute;
+               top: 354%;
+               left: 32%;
+               font-family: 'Montserrat', sans-serif;
+               color: #000000;
+               font-weight: bold;
+               font-size: 43px;
+          }
+
+          .span_under_our_class_schedule{
+               position: absolute;
+               text-align: center;
+               top: 370%;
+               left: 31.8%;
+               font-family: 'Montserrat', sans-serif;
+               color: #000000;
+               font-size: 18px;
+               line-height: 25px;
+          }
+
+          .frame_graphic_design{
+               position: absolute;
+               top: 400%;
+               left: 10.5%;
+               border-radius: 15px;
+               border-width: 1px;
+               border-color: #3A5BCC;
+               background-color: transparent;
+               width: 500px;
+               height: 180px;
+          }
+
+          .monday{
+               position: absolute;
+               top: 401%;
+               left: 13%;
+               color: #3A5BCC;
+               font-family: 'Montserrat', sans-serif;
+               font-weight: bold;
+               font-size: 16px;
+          }
+
+          .monday_graphic_design{
+               position: absolute;
+               top: 408%;
+               left: 13%;
+               color: #000000;
+               font-family: 'Montserrat', sans-serif;
+               font-weight: bold;
+               font-size: 30px;
+          }
+
+          .time_graphic_design{
+               position: absolute;
+               top: 420%;
+               left: 13%;
+               color: #3A5BCC;
+               font-family: 'Montserrat', sans-serif;
+               font-weight: bold;
+               font-size: 26px;
+          }
+
+          .frame_digital_marketing{
+               position: absolute;
+               top: 400%;
+               left: 52.5%;
+               border-radius: 15px;
+               border-width: 1px;
+               border-color: #3A5BCC;
+               background-color: transparent;
+               width: 500px;
+               height: 180px;
+          }
+
+          .tuesday{
+               position: absolute;
+               top: 401%;
+               left: 55%;
+               color: #3A5BCC;
+               font-family: 'Montserrat', sans-serif;
+               font-weight: bold;
+               font-size: 16px;
+          }
+
+          .tuesday_digital_marketing{
+               position: absolute;
+               top: 408%;
+               left: 55%;
+               color: #000000;
+               font-family: 'Montserrat', sans-serif;
+               font-weight: bold;
+               font-size: 30px;
+          }
+
+          .time_digital_marketing{
+               position: absolute;
+               top: 420%;
+               left: 55%;
+               color: #3A5BCC;
+               font-family: 'Montserrat', sans-serif;
+               font-weight: bold;
+               font-size: 26px;
+          }
+
+          .frame_ux_ui_design{
+               position: absolute;
+               top: 440%;
+               left: 10.5%;
+               border-radius: 15px;
+               border-width: 1px;
+               border-color: #3A5BCC;
+               background-color: transparent;
+               width: 500px;
+               height: 180px;
+          }
+
+          .wednesday{
+               position: absolute;
+               top: 441%;
+               left: 13%;
+               color: #3A5BCC;
+               font-family: 'Montserrat', sans-serif;
+               font-weight: bold;
+               font-size: 16px;
+          }
+
+          .wednesday_ux_ui_design{
+               position: absolute;
+               top: 448%;
+               left: 13%;
+               color: #000000;
+               font-family: 'Montserrat', sans-serif;
+               font-weight: bold;
+               font-size: 30px;
+          }
+
+          .time_ux_ui_design{
+               position: absolute;
+               top: 460%;
+               left: 13%;
+               color: #3A5BCC;
+               font-family: 'Montserrat', sans-serif;
+               font-weight: bold;
+               font-size: 26px;
+          }
+
+          .frame_data_science{
+               position: absolute;
+               top: 440%;
+               left: 52.5%;
+               border-radius: 15px;
+               border-width: 1px;
+               border-color: #3A5BCC;
+               background-color: transparent;
+               width: 500px;
+               height: 180px;
+          }
+
+          .thursday{
+               position: absolute;
+               top: 441%;
+               left: 55%;
+               color: #3A5BCC;
+               font-family: 'Montserrat', sans-serif;
+               font-weight: bold;
+               font-size: 16px;
+          }
+
+          .thursday_data_science{
+               position: absolute;
+               top: 448%;
+               left: 55%;
+               color: #000000;
+               font-family: 'Montserrat', sans-serif;
+               font-weight: bold;
+               font-size: 30px;
+          }
+
+          .time_data_science{
+               position: absolute;
+               top: 460%;
+               left: 55%;
+               color: #3A5BCC;
+               font-family: 'Montserrat', sans-serif;
+               font-weight: bold;
+               font-size: 26px;
+          }
+
+          .frame_mobile_app_development{
+               position: absolute;
+               top: 480%;
+               left: 32%;
+               border-radius: 15px;
+               border-width: 1px;
+               border-color: #3A5BCC;
+               background-color: transparent;
+               width: 500px;
+               height: 180px;
+          }
+
+          .friday{
+               position: absolute;
+               top: 481%;
+               left: 34.5%;
+               color: #3A5BCC;
+               font-family: 'Montserrat', sans-serif;
+               font-weight: bold;
+               font-size: 16px;
+          }
+
+          .friday_mobile_app_development{
+               position: absolute;
+               top: 488%;
+               left: 34.5%;
+               color: #000000;
+               font-family: 'Montserrat', sans-serif;
+               font-weight: bold;
+               font-size: 30px;
+          }
+
+          .time_mobile_app_development{
+               position: absolute;
+               top: 500%;
+               left: 34.5%;
+               color: #3A5BCC;
+               font-family: 'Montserrat', sans-serif;
+               font-weight: bold;
+               font-size: 26px;
+          }
+
+          .frame_web_development{
+               position: absolute;
+               top: 480%;
+               left: 52.5%;
+               border-radius: 15px;
+               border-width: 1px;
+               border-color: #3A5BCC;
+               background-color: transparent;
+               width: 500px;
+               height: 180px;
+          }
+
+          .saturday{
+               position: absolute;
+               top: 481%;
+               left: 55%;
+               color: #3A5BCC;
+               font-family: 'Montserrat', sans-serif;
+               font-weight: bold;
+               font-size: 16px;
+          }
+
+          .saturday_web_development{
+               position: absolute;
+               top: 488%;
+               left: 55%;
+               color: #000000;
+               font-family: 'Montserrat', sans-serif;
+               font-weight: bold;
+               font-size: 30px;
+          }
+
+          .time_web_development{
+               position: absolute;
+               top: 500%;
+               left: 55%;
+               color: #3A5BCC;
+               font-family: 'Montserrat', sans-serif;
+               font-weight: bold;
+               font-size: 26px;
+          }
+
+          .photo_end_classes{
+               position: absolute;
+               top: 540%;
+               left: 0%;
+               filter: blur(2px);
+          }
+
+          .contact_us_in_the_end{
+               position: absolute;
+               top: 547%;
+               left: 9%;
+               font-size: 40px;
+               font-weight: bold;
+               font-family: 'Montserrat', sans-serif;
+               color: #ffffff;
+          }
+
+          .under_span_under_in_the_end{
+               position: absolute;
+               top: 570%;
+               left: 9%;
+               font-size: 18px;
+               font-family: 'Montserrat', sans-serif;
+               line-height: 30px;
+               color: #ffffff;
+          }
+
+          .contact_us_button_in_end{
+               position: absolute;
+               top: 568%;
+               left: 76%;
+               background-color: #3A5BCC;
+               font-family: 'Montserrat', sans-serif;
+               padding: 16px 23px;
+               font-size: 18px;
+               color: #ffffff;
+               font-weight: bold;
+               border-width: 0px;
+          }
+
+          .contact_us_button_in_end:hover{
+               background-color: #28408f;
+          }
+
+          .end_div_page-c{
+               position: absolute;
+               top: 620%;
+               width: 100%;
+               height: 450px;
+               background-color: #000000;
+          }
+
+          .self_school_in_end-c{
+               position: absolute;
+               top: 120px;
+               left: 12%;
+               color: #ffffff;
+               font-size: 22px;
+               font-weight: bold;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .facebook_end{
+               position: absolute;
+               top: 33%;
+               left: 10.7%;
+          }
+
+          .instagram_end{
+               position: absolute;
+               top: 33%;
+               left: 14.7%;
+          }
+
+          .telegram_end{
+               position: absolute;
+               top: 33%;
+               left: 18.7%;
+          }
+
+          .pages-span{
+               position: absolute;
+               top: 122px;
+               left: 550px;
+               color: #ffffff;
+               font-size: 22px;
+               font-weight: bold;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .about_us_end{
+               position: absolute;
+               color: #ffffff;
+               top: 180px;
+               left: 570px;
+               font-size: 20px;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .classes_end{
+               position: absolute;
+               color: #ffffff;
+               top: 225px;
+               left: 570px;
+               font-size: 20px;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .teachers_end{
+               position: absolute;
+               color: #ffffff;
+               top: 270px;
+               left: 570px;
+               font-size: 20px;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .FAQ_end{
+               position: absolute;
+               color: #ffffff;
+               top: 315px;
+               left: 570px;
+               font-size: 20px;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .contact_us_end{
+               position: absolute;
+               color: #ffffff;
+               top: 360px;
+               left: 570px;
+               font-size: 20px;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .main_contact_end{
+               position: absolute;
+               top: 122px;
+               left: 885px;
+               color: #ffffff;
+               font-size: 22px;
+               font-weight: bold;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .number_end{
+               position: absolute;
+               color: #ffffff;
+               top: 180px;
+               left: 940px;
+               font-size: 20px;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .time_work_end{
+               position: absolute;
+               color: #ffffff;
+               top: 230px;
+               left: 940px;
+               font-size: 20px;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .email_end{
+               position: absolute;
+               color: #ffffff;
+               top: 280px;
+               left: 940px;
+               font-size: 20px;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .phone_end{
+               position: absolute;
+               top: 167px;
+               left: 885px;
+          }
+
+          .clock_end{
+               position: absolute;
+               top: 215px;
+               left: 885px;
+          }
+
+          .email_end_logo{
+               position: absolute;
+               top: 275px;
+               left: 895px;
+          }
+     </style>
+
+     {% include 'sch/base.html' with color_for_classes="blue" %}
+     <div class="main_photo_and_text">
+          <img class="classes_main_photo" src="static/image/classes_main.webp" width="1348px" height="290px" alt="classes main">
+          <span class="classes_in_main_photo">Заняття</span>
+     </div>
+     <div class="our_classes">
+          <h4 class="h4_our_class">Наші заняття</h4>
+          <h1 class="h1_our_online_courses">Наші онлайн-курси</h1>
+          <span class="span_under_h1_our_courses">Ласкаво просимо до Self School, вашої брами <br>
+               до сучасної освіти. За допомогою наших <br>
+               онлайн-курсів ви можете навчатися <br>
+               будь-коли, будь-де та у своєму власному <br>
+               темпі. Наші курси створені, щоб надати  <br>
+               вам навички та знання, необхідні для  <br>
+               досягнення успіху в сучасному цифровому <br>
+               світі.</span>
+     </div>
+     <div class="frame_with_information">
+          <iframe class="frame_graphic_design_first"></iframe>
+          <h1 class="h1_graphic_design">Графічний <br> дизайн</h1>
+          <spa class="span_under_graphic_design">Наш курс графічного <br> 
+               дизайну навчить вас <br> 
+               створювати візуально  <br>
+               приголомшливі дизайни <br>
+               для друкованих і цифрових <br> 
+               медіа. Дізнайтеся, як <br>
+               використовувати стандартні <br> 
+               інструменти, такі як Adobe <br>
+               Photoshop, Illustrator <br>
+               та InDesign, для створення <br>
+               логотипів, брошур, <br>
+               плакатів тощо.</span>
+          <h1 class="h1_data_science">Data Science</h1>
+          <span class="span_under_h1_data_science">Наш курс Data Science <br>
+               навчить вас аналізувати  <br>
+               та інтерпретувати <br>
+               великі обсяги даних за  <br>
+               допомогою статистичних  <br>
+               і обчислювальних методів. <br>
+               Дізнайтеся, як використовувати <br>
+               Python, R та інші мови <br> 
+               програмування щоб отримати <br>
+               інформацію та <br>
+               керувати прийняттям рішень.</span>
+
+          <h1 class="h1_ux_ui_design">UX/UI Дизайн</h1>
+          <span class="span_ui_ux_design">Наш курс UX/UI Design <br>
+               навчить вас створювати  <br>
+               красиві та функціональні <br> 
+               дизайни. Навчіться  <br> 
+               диригувати дослідження <br>
+               користувачів створення <br>
+               каркасів і прототипів, а  <br>
+               також дизайн інтуїтивно <br> 
+               зрозумілі інтерфейси для <br>
+               веб і мобільних додатків.</span>
+          <h1 class="h1_mobile_app_development">Розробка <br> мобільних додатків</h1>
+          <span class="span_mobile_app_development">Наш курс «Розробка <br>
+               мобільних додатків» навчить <br>
+               вас створювати рідні  <br>
+               та гібридні додатки  <br>
+               для пристроїв iOS та  <br>
+               Android. Дізнайтеся, як <br>
+               використовуйте такі  <br>
+               фреймворки, як React  <br>
+               Native, Ionic і Flutter, <br>
+               щоб створювати потужні <br>
+               мобільні програми.</span>
+          <h1 class="h1_web_development">Веб-розробка</h1>
+          <span class="span_web_development">Наш курс веб-розробки <br>
+               навчить вас створювати <br>
+               та підтримувати <br>
+               веб-сайти з використанням  <br>
+               найновіших технологій,  <br>
+               включаючи HTML, CSS,  <br>
+               JavaScript тощо. Дізнайтеся, <br>
+               як створювати адаптивний  <br>
+               дизайн, розробляти динамічні <br>
+               веб-додатки та оптимізувати <br>
+               продуктивність веб-сайту.</span>
+     </div>
+     <div class="schedule-div">
+          <h4 class="schedule_h4">Розклад</h4>
+          <h1 class="h1_out_class_schedule">Наш розклад занять</h1>
+          <span class="span_under_our_class_schedule">Ми пропонуємо курси цілий рік, з кількома <br>
+               датами початку відповідно до вашого розкладу. <br>
+               Незалежно від того, чи хочете ви розпочати <br>
+               нову кар’єру, підвищити кваліфікацію на поточній <br>
+               роботі чи займатися своїми захопленнями, <br>
+               у нас є курс для вас.</span>
+          <iframe class="frame_graphic_design"></iframe>
+          <h4 class="monday">Понеділок</h4>
+          <h1 class="monday_graphic_design">Графічний дизайн</h1>
+          <span class="time_graphic_design">9:10 am - 11:30 am</span>
+
+          <iframe class="frame_digital_marketing"></iframe>
+          <h4 class="tuesday">Вівторок</h4>
+          <span class="time_digital_marketing">9:10 am - 11:30 am</span>
+          <h1 class="tuesday_digital_marketing">UX/UI Дизайн</h1>
+
+          <iframe class="frame_ux_ui_design"></iframe>
+          <h4 class="wednesday">Середа</h4>
+          <h1 class="wednesday_ux_ui_design">Data Science</h1>
+          <span class="time_ux_ui_design">9:10 am - 11:30 am</span>
+
+          <iframe class="frame_data_science"></iframe>
+          <h4 class="thursday">Четверг</h4>
+          <h1 class="thursday_data_science">Розробка моб. додатків</h1>
+          <span class="time_data_science">9:10 am - 11:30 am</span>
+
+          <iframe class="frame_mobile_app_development"></iframe>
+          <h4 class="friday">П'ятниця</h4>
+          <h1 class="friday_mobile_app_development">Веб-розробка</h1>
+          <span class="time_mobile_app_development">9:10 am - 11:30 am</span>
+     </div>
+     <div class="end_photo_contact_us">
+          <img class="photo_end_classes" src="static/image/end_classes.webp" width="1349px" height="400px" alt="end classes">
+          <h1 class="contact_us_in_the_end">Зв'яжіться з нами для отримання <br> додаткової інформації</h1>
+          <span class="under_span_under_in_the_end">Маєте запитання щодо наших курсів чи програм? Потрібна допомога у виборі <br>
+               правильного курсу? Наші студентські консультанти тут, щоб допомогти. <br>
+               Зв’яжіться з нами електронною поштою або телефоном, і ми з радістю вам допоможемо.</span>
+          <button onclick="redirect_contact()" class="contact_us_button_in_end">Зв'язатися</button>
+     </div>
+     {% include "sch/end_div.html" with class_for_classes="trues" %}
+
+     <script>
+          function redirect_contact() {
+               window.location.href = "{% url 'contact_us' %}"
+          }
+     </script>
+
+</body>
+</html>

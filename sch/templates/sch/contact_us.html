@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Contact us</title>
+</head>
+<body>
+
+     <style>
+          .contact_us_main_photo{
+               position: absolute;
+               filter: blur(2px);
+               left: 0%;
+               top: 27%;
+          }
+
+          .contact_us_in_main_photo{
+               position: absolute;
+               font-weight: bold;
+               color: #ffffff;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 55px;
+               top: 44%;
+               left: 35%;
+          }
+
+          .h4_contact_us{
+               position: absolute;
+               top: 95%;
+               left: 8%;
+               font-weight: bold;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 18px;
+               color: #3A5BCC;
+          }
+
+          .h1_get_in_touch_with{
+               position: absolute;
+               top: 101%;
+               left: 8%;
+               font-weight: bold;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 38px;
+               color: #000000;
+          }
+
+          .span_under_h1_get_in_touch_with{
+               position: absolute;
+               top: 116%;
+               left: 8%;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 19px;
+               color: #000000;
+          }
+
+          .logo_phone_under_span{
+               position: absolute;
+               top: 136%;
+               left: 10.4%;
+          }
+
+          .h1_under_logo_phone{
+               position: absolute;
+               font-family: 'Montserrat', sans-serif;
+               top: 143%;
+               left: 11%;
+          }
+
+          .span_number_phone_under_h1{
+               position: absolute;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 18px;
+               top: 157%;
+               left: 11%;
+          }
+
+          .logo_email_under_span{
+               position: absolute;
+               top: 137%;
+               left: 30%;
+          }
+
+          .h1_under_logo_email{
+               position: absolute;
+               font-family: 'Montserrat', sans-serif;
+               top: 143%;
+               left: 30%;
+          }
+
+          .span_email_under_logo{
+               position: absolute;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 18px;
+               top: 157%;
+               left: 30%;
+          }
+          
+          .name_input{
+               position: absolute;
+               top: 171%;
+               left: 8%;
+               width: 530px;
+               height: 40px;
+               border-color: #000000;
+               border-width: 1px;
+               font-size: 18px;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .name_input::placeholder{
+               position: absolute;
+               left: 5%;
+          }
+
+          .email_input{
+               position: absolute;
+               top: 181%;
+               left: 8%;
+               width: 530px;
+               height: 40px;
+               border-color: #000000;
+               border-width: 1px;
+               font-size: 18px;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .email_input::placeholder{
+               position: absolute;
+               left: 5%;
+          }
+
+          .message_input{
+               position: absolute;
+               top: 191%;
+               left: 8%;
+               width: 530px;
+               height: 150px;
+               border-color: #000000;
+               border-width: 1px;
+               font-size: 18px;
+               resize: none;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          
+          .message_input::placeholder{
+               position: absolute;
+               left: 5%;
+               top: 10%;
+          }
+
+          .send_message_button{
+               position: absolute;
+               top: 219%;
+               left: 8%;
+               width: 536px;
+               height: 40px;
+               border-width: 0px;
+               background-color: #3A5BCC;
+               color: #ffffff;
+               font-size: 18px;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .send_message_button:hover{
+               background-color: #324eaa;
+          }
+          
+          .near_three_inputs{
+               position: absolute;
+               top: 120%;
+               left: 54%;
+               border-radius: 15px;
+          }
+
+          .end_div_page_con{
+               position: absolute;
+               top: 243%;
+               width: 100%;
+               height: 450px;
+               background-color: #000000;
+          }
+
+          .self_school_in_end_con{
+               position: absolute;
+               top: 120px;
+               left: 12%;
+               color: #ffffff;
+               font-size: 22px;
+               font-weight: bold;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .facebook_end{
+               position: absolute;
+               top: 33%;
+               left: 10.7%;
+          }
+
+          .instagram_end{
+               position: absolute;
+               top: 33%;
+               left: 14.7%;
+          }
+
+          .telegram_end{
+               position: absolute;
+               top: 33%;
+               left: 18.7%;
+          }
+
+          .pages-span{
+               position: absolute;
+               top: 122px;
+               left: 550px;
+               color: #ffffff;
+               font-size: 22px;
+               font-weight: bold;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .about_us_end{
+               position: absolute;
+               color: #ffffff;
+               top: 180px;
+               left: 570px;
+               font-size: 20px;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .classes_end{
+               position: absolute;
+               color: #ffffff;
+               top: 225px;
+               left: 570px;
+               font-size: 20px;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .teachers_end{
+               position: absolute;
+               color: #ffffff;
+               top: 270px;
+               left: 570px;
+               font-size: 20px;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .FAQ_end{
+               position: absolute;
+               color: #ffffff;
+               top: 315px;
+               left: 570px;
+               font-size: 20px;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .contact_us_end{
+               position: absolute;
+               color: #ffffff;
+               top: 360px;
+               left: 570px;
+               font-size: 20px;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .main_contact_end{
+               position: absolute;
+               top: 122px;
+               left: 885px;
+               color: #ffffff;
+               font-size: 22px;
+               font-weight: bold;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .number_end{
+               position: absolute;
+               color: #ffffff;
+               top: 180px;
+               left: 940px;
+               font-size: 20px;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .time_work_end{
+               position: absolute;
+               color: #ffffff;
+               top: 230px;
+               left: 940px;
+               font-size: 20px;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .email_end{
+               position: absolute;
+               color: #ffffff;
+               top: 280px;
+               left: 940px;
+               font-size: 20px;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .phone_end{
+               position: absolute;
+               top: 167px;
+               left: 885px;
+          }
+
+          .clock_end{
+               position: absolute;
+               top: 215px;
+               left: 885px;
+          }
+
+          .email_end_logo{
+               position: absolute;
+               top: 275px;
+               left: 895px;
+          }
+
+          .a_self_school_span{
+               color: #000000;
+          }
+     </style>
+
+     {% include 'sch/base.html' with color_for_contact_us="blue" %}
+     <div class="main_photo_and_text_contact_us">
+          <img class="contact_us_main_photo" src="static/image/main_contact_us.png" width="1348px" height="290px" alt="contact us main">
+          <span class="contact_us_in_main_photo">Зв'язок з нами</span>
+     </div>
+     <div class="contact_us_div">
+          <h4 class="h4_contact_us">Зв'язок з нами</h4>
+          <h1 class="h1_get_in_touch_with">Зв'яжіться з Self School</h1>
+          <span class="span_under_h1_get_in_touch_with">Якщо у вас виникли запитання або потрібна допомога <br>
+               щодо будь-якого з наших онлайн-курсів, будь ласка,  <br>
+               не соромтеся зв’язатися з нами. Наша команда завжди  <br>
+               готова допомогти вам досягти ваших цілей і підтримати  <br>
+               вас у вашому навчанні.</span>
+          <img class="logo_phone_under_span" src="static/image/logo_phone_for_contact_us.jpg" width="55px" alt="phone logo">
+          <h1 class="h1_under_logo_phone">Phone:</h1>
+          <span class="span_number_phone_under_h1">+380-95-1418-577</span>
+
+          <img class="logo_email_under_span" src="static/image/logo_email.jpg" width="40px" alt="logo email">
+          <h1 class="h1_under_logo_email">Email:</h1>
+          <span class="span_email_under_logo">itselfschool@gmail.com</span>
+     </div>
+     <div class="three_inputs">
+          <form action="/contact-us" method="post">
+               {% csrf_token %}
+               <input name="name" class="name_input" placeholder="Name" type="text">
+               <input name="email" class="email_input" placeholder="Email" type="text">
+               <textarea name="message" class="message_input" placeholder="Message" type="text"></textarea>
+               <button class="send_message_button">НАДІСЛАТИ ПОВІДОМЛЕННЯ</button>
+          </form>
+          <img class="near_three_inputs" src="static/image/contact_us_new.jpg" width="550px" alt="near three inputs">
+     </div>
+     {% include "sch/end_div.html" with classes_for_contact_us="trues" %}
+</body>
+</html>

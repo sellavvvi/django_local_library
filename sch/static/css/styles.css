@@ -1,0 +1,904 @@
+body, html {
+     width: 100%;
+     margin: 0;
+     padding: 0;
+}
+
+/* Стилі для div, щоб розтягнувся на всю ширину екрану */
+#headerDiv {
+     width: 100%;
+     background-color: #000000;
+     color: white;
+     font: 20px Montserrat, sans-serif;
+     line-height: 67px;
+}
+
+.message-logo{
+     position: absolute;
+     top: 2.5%;
+     left: 10%;
+}
+
+.span-email{
+     position: absolute;
+     color: aliceblue;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 25px;
+     top: 3.2%;
+     left: 13%;
+}
+
+.span-phone{
+     position: relative;
+     font-family: 'Montserrat', sans-serif;
+     top: 1px;
+     left: 32%
+}
+
+.img-phone{
+     position: absolute;
+     top: -45%;
+     left: -35%;
+}
+
+.facebook-logo{
+     position: absolute;
+     top: 2%;
+     left: 85%;
+}
+
+.instagram-logo{
+     position: absolute;
+     top: 1%;
+     left: 88%;
+}
+
+.telegram-logo{
+     position: absolute;
+     top: 0.5%;
+     left: 91.5%;
+}
+
+#mainPage{
+     width: 100%;
+     background-color: white;
+     font-size: 25px;
+     line-height: 80px;
+}
+
+.span-self-school{
+     position: absolute;
+     font-family: 'Montserrat', sans-serif;
+     top: 10%;
+     left: 2%;
+}
+
+.about-us{
+     position: absolute;
+     color: #000000;
+     font-family: 'Montserrat', sans-serif;
+     top: 7%;
+     left: 40%;
+     width: 100px;
+     height: 100px;
+}
+
+.classes{
+     position: absolute;
+     color: #000000;
+     font-family: 'Montserrat', sans-serif;
+     top: 7%;
+     left: 48%;
+     width: 100px;
+     height: 100px;
+}
+
+.teachers{
+     position: absolute;
+     color: #000000;
+     font-family: 'Montserrat', sans-serif;
+     top: 7%;
+     left: 57%;
+     width: 100px;
+     height: 100px;
+}
+
+.faq{
+     position: absolute;
+     color: #000000;
+     font-family: 'Montserrat', sans-serif;
+     top: 7%;
+     left: 68%;
+     width: 100px;
+     height: 100px;
+}
+
+.contact_us{
+     position: absolute;
+     color: #000000;
+     font-family: 'Montserrat', sans-serif;
+     top: 7%;
+     left: 74%;
+     width: 100px;
+     height: 100px;
+}
+
+.about-us:hover, .classes:hover, .teachers:hover, .faq:hover, .contact_us:hover{
+     color: #00bfff;
+}
+
+.appointment{
+     position: absolute;
+     background-color: #3A5BCC;
+     border-color: #3A5BCC;
+     font-family: 'Montserrat', sans-serif;
+     color: white;
+     width: 158px;
+     height: 50px;
+     border-width: 1px;
+     border-radius: 0%;
+     font: 20px, sans-serif;
+     padding: 12px 24px;
+     top: 13.5%;
+     left: 85%;
+     transition: 0.3s ease;
+}
+
+.appointment:hover{
+     background-color: transparent;
+     color: #000000;
+}
+
+.div-photo{
+     position: absolute;
+     top: 25%;
+     background-color: white;
+     width: 100%;
+     line-height: 10px;
+}
+
+.photo-in-main-div{
+     border-radius: 20px;
+}
+
+.weclome-to{
+     position: absolute;
+     color: #3A5BCC;
+     font-size: 16px;
+     font-family: 'Montserrat', sans-serif;
+     top: 10%;
+     left: 54%;
+}
+
+.self-main-text{
+     position: absolute;
+     color: #000000;
+     font-size: 48px;
+     font-family: 'Montserrat', sans-serif;
+     opacity: 0;
+     transform: translateY(120px);
+     animation: slideUpSelf 1s forwards;
+     top: 12%;
+     left: 54%;
+     line-height: 55px;
+}
+
+@keyframes slideUpSelf {
+     to {
+          opacity: 1; /* Кінцева прозорість */
+          transform: translateY(0);
+     }
+}
+
+.text-self-main{
+     position: absolute;
+     color: #000000;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 18px;
+     top: 57%;
+     left: 54.2%;
+     line-height: 28px;
+}
+
+.get-started{
+     position: absolute;
+     background-color: #3A5BCC;
+     color: white;
+     width: 158px;
+     height: 50px;
+     border-width: 1px;
+     border-radius: 0%;
+     font: 20px, sans-serif;
+     font-family: 'Montserrat', sans-serif;
+     padding: 12px 24px;
+     top: 89%;
+     left: 54%;
+     transition: 0.3s ease;
+}
+
+.get-started:hover{
+     background-color: #1f9dc7;
+}
+
+.supported-by{
+     position: absolute;
+     width: 100%;
+     top: 115%;
+     background-color: white;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 18px;
+     line-height: 80px;
+}
+
+.logoipsum-1, .logoipsum-2, .logoipsum-3, .logoipsum-4, .logoipsum-5{
+     opacity: 0;
+     transform: translateY(-50px);
+     animation: slideUp 2s forwards;
+     position: relative;
+     left: -3.5%;
+     margin-left: 100px;
+}
+
+.supported-by-p{
+     transform: translateY(-50px);
+     animation: slideUp 2s forwards;
+}
+
+@keyframes slideUp {
+     from {
+          opacity: 0;
+          transform: translateY(50px);
+     }
+     to {
+          opacity: 1;
+          transform: translateY(0);
+     }
+}
+
+.about{
+     position: absolute;
+     top: 170%;
+     width: 100%;
+     background-color: #ffffff;
+     line-height: 120px;
+}
+
+.about p{
+     font-size: 22px;
+     color: #3A5BCC;
+     margin-left: 107px;
+}
+
+.we-help-you{
+     position: absolute;
+     top: 55%;
+     left: 7.7%;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 42px;
+     margin-top: 10px;
+     line-height: 60px;
+}
+
+.img-we-help-you{
+     position: absolute;
+     top: 150%;
+     left: 7.7%;
+     border-radius: 20px;
+}
+
+.txt-join-us{
+     position: absolute;
+     top: 100%;
+     left: 55%;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 18px;
+     line-height: 28px;
+}
+
+.about-li-1{
+     position: absolute;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 18px;
+     top: 154.7%;
+     left: 58%;
+     list-style-type: none;
+}
+
+.about-li-2{
+     position: absolute;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 18px;
+     top: 185%;
+     left: 58%;
+     list-style-type: none;
+}
+
+.about-li-3{
+     position: absolute;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 18px;
+     top: 215%;
+     left: 58%;
+     list-style-type: none;
+}
+
+.check_mark-1{
+     position: absolute;
+     left: 55%;
+     top: 215%;
+}
+
+.check_mark-2{
+     position: absolute;
+     left: 55%;
+     top: 185%;
+}
+
+.check_mark-3{
+     position: absolute;
+     left: 55%;
+     top: 245%;
+}
+
+.more-about-us{
+     position: absolute;
+     left: 55%;
+     top: 300%;
+     background-color: #3A5BCC;
+     border-color: #3A5BCC;
+     color: white;
+     width: 158px;
+     height: 50px;
+     border-width: 1px;
+     border-radius: 0%;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 14px;
+     padding: 12px 24px;
+     transition: 0.3s ease;
+}
+
+.more-about-us:hover{
+     background-color: #1f9dc7;
+}
+
+.sixsc-school-project{
+     position: absolute;
+     top: 345%;
+     left: 770px;
+     color: #3A5BCC;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 42px;
+     font-weight: bold;
+}
+
+.lessons-school-project{
+     position: absolute;
+     font-size: 22px;
+     font-family: 'Montserrat', sans-serif;
+     left: 56.5%;
+     top: 370%;
+}
+
+.three-hundred-school-project{
+     position: absolute;
+     top: 345%;
+     left: 930px;
+     color: #3A5BCC;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 42px;
+     font-weight: bold;
+}
+
+.tasks-school-project{
+     position: absolute;
+     font-size: 22px;
+     font-family: 'Montserrat', sans-serif;
+     left: 930px;
+     top: 370%;
+}
+
+.number-applicants{
+     position: absolute;
+     top: 345%;
+     left: 1090px;
+     color: #3A5BCC;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 42px;
+     font-weight: bold;
+}
+
+* {
+     user-select: none;
+}
+
+.text-applicants{
+     position: absolute;
+     font-size: 22px;
+     font-family: 'Montserrat', sans-serif;
+     left: 1090px;
+     top: 370%;
+}
+
+.our-program{
+     position: absolute;
+     color: #3A5BCC;
+     font-weight: bold;
+     font-family: 'Montserrat', sans-serif;
+     top: 480%;
+     left: 47.5%;
+}
+
+.grade-programs{
+     position: absolute;
+     color: #000000;
+     font-weight: bold;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 52px;
+     top: 495%;
+     left: 35%;
+}
+
+.digital-marketing{
+     position: absolute;
+     top: 340%;
+     left: 10%;
+     border-radius: 20px;
+}
+
+.web-development{
+     position: absolute;
+     top: 340%;
+     left: 40%;
+     border-radius: 20px;
+}
+
+.graphic-design{
+     position: absolute;
+     top: 340%;
+     left: 70%;
+     border-radius: 20px;
+}
+
+.digital-marketing-h2{
+     position: absolute;
+     top: 390%;
+     left: 10%;
+     font-family: 'Montserrat', sans-serif;
+}
+
+.web-development-h2{
+     position: absolute;
+     top: 390%;
+     left: 40%;
+     font-family: 'Montserrat', sans-serif;
+}
+
+.graphic-design-h2{
+     position: absolute;
+     top: 390%;
+     left: 70%;
+     font-family: 'Montserrat', sans-serif;
+}
+
+.digital-marketing-text{
+     position: absolute;
+     top: 400%;
+     left: 10%;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 18px;
+}
+
+.web-development-text{
+     position: absolute;
+     top: 400%;
+     left: 40%;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 18px;
+}
+
+.graphic-design-text{
+     position: absolute;
+     top: 400%;
+     left: 70%;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 18px;
+}
+
+.digital-marketing-read-more{
+     position: absolute;
+     top: 426%;
+     text-decoration: none;
+     left: 10%;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 15px;
+     transition: transform 0.3s ease-out;
+}
+
+.digital-marketing-read-more:hover{
+     transform: translateY(-12px);
+}
+
+.web-development-read-more{
+     position: absolute;
+     top: 422%;
+     text-decoration: none;
+     left: 40%;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 15px;
+     transition: transform 0.3s ease-out;
+}
+
+.web-development-read-more:hover{
+     transform: translateY(-12px);
+}
+
+.graphic-design-read-more{
+     position: absolute;
+     top: 426%;
+     text-decoration: none;
+     left: 70%;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 15px;
+     transition: transform 0.3s ease-out;
+}
+
+.graphic-design-read-more:hover{
+     transform: translateY(-12px);
+}
+
+.why-choose-us-span{
+     position: absolute;
+     color: #3A5BCC;
+     font-weight: bold;
+     font-family: 'Montserrat', sans-serif;
+     top: 450%;
+     left: 8%;
+}
+
+.why-you-should-choose-us-h1{
+     position: absolute;
+     color: #000000;
+     font-weight: bold;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 50px;
+     top: 450%;
+     left: 8%;
+}
+
+.text-why-you-should{
+     position: absolute;
+     color: #000000;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 20px;
+     top: 478%;
+     left: 8%;
+}
+
+.flexible-learning-check{
+     position: absolute;
+     top: 500%;
+     left: 8%;
+}
+
+.flexible-learning{
+     position: absolute;
+     font-family: 'Montserrat', sans-serif;
+     font-weight: bold;
+     font-size: 22px;
+     top: 500%;
+     left: 14%;
+}
+
+.flexible-learning-text{
+     position: absolute;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 18px;
+     top: 505%;
+     left: 14%;
+}
+
+.expert-instructors-check{
+     position: absolute;
+     top: 525%;
+     left: 8%;
+}
+
+.expert-instructors{
+     position: absolute;
+     font-family: 'Montserrat', sans-serif;
+     font-weight: bold;
+     font-size: 22px;
+     top: 525%;
+     left: 14%;
+}
+
+.expert-instructors-text{
+     position: absolute;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 18px;
+     top: 530%;
+     left: 14%;
+}
+
+.comprehensive-curriculum-check{
+     position: absolute;
+     top: 552%;
+     left: 8%;
+}
+
+.comprehensive-curriculum{
+     position: absolute;
+     font-family: 'Montserrat', sans-serif;
+     font-weight: bold;
+     font-size: 22px;
+     top: 552%;
+     left: 14%;
+}
+
+.comprehensive-curriculum-text{
+     position: absolute;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 18px;
+     top: 557%;
+     left: 14%;
+}
+
+.img-why-you-should{
+     position: absolute;
+     top: 505%;
+     left: 55%;
+     border-radius: 20px;
+}
+
+.Contact_us_in_end{
+     position: absolute;
+     width: 100%;
+     top: 600%;
+}
+
+.contact_us_in_end_span{
+     position: absolute;
+     color: #3A5BCC;
+     font-weight: bold;
+     font-family: 'Montserrat', sans-serif;
+     top: 600%;
+     left: 8%;
+}
+
+.h1_contact_us_in_the_end{
+     position: absolute;
+     top: 600%;
+     left: 8%;
+     font-weight: bold;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 43px;
+}
+
+.span_contact_us_into_h1{
+     position: absolute;
+     top: 150px;
+     left: 8%;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 20px;
+}
+
+.logo_phone_end{
+     position: absolute;
+     top: 300px;
+     left: 10%;
+}
+
+.number_phone_end{
+     position: absolute;
+     top: 360px;
+     left: 9.7%;
+     font-weight: bold;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 30px;
+}
+
+.number_phone_in_end{
+     position: absolute;
+     top: 410px;
+     left: 9.7%;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 18px;
+}
+
+.email_logo_in_end{
+     position: absolute;
+     top: 300px;
+     left: 32%;
+}
+
+.email_text_in_end{
+     position: absolute;
+     top: 360px;
+     left: 31.7%;
+     font-weight: bold;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 30px;
+}
+
+.email_email_in_end{
+     position: absolute;
+     top: 410px;
+     left: 31.7%;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 18px;
+}
+
+.but_send_a_message{
+     position: absolute;
+     background-color: #3A5BCC;
+     top: 500px;
+     left: 8%;
+     font-weight: bold;
+     font-family: 'Montserrat', sans-serif;
+     border-color: #3A5BCC;
+     color: white;
+     width: 170px;
+     height: 50px;
+     border-width: 1px;
+     border-radius: 0%;
+     font: 20px, sans-serif;
+     padding: 12px 24px;
+     transition: 0.3s ease;
+}
+
+.but_send_a_message:hover{
+     background-color: #1f9dc7;
+}
+
+.end_photo{
+     position: absolute;
+     top: 600%;
+     left: 58%;
+     border-radius: 20px;
+}
+
+.end_div_page{
+     position: absolute;
+     top: 700%;
+     width: 100%;
+     height: 450px;
+     background-color: #000000;
+}
+
+.self_school_in_end{
+     position: absolute;
+     top: 120px;
+     left: 12%;
+     color: #ffffff;
+     font-size: 22px;
+     font-weight: bold;
+     font-family: 'Montserrat', sans-serif;
+}
+
+.facebook_end{
+     position: absolute;
+     top: 33%;
+     left: 10.7%;
+}
+
+.instagram_end{
+     position: absolute;
+     top: 33%;
+     left: 14.7%;
+}
+
+.telegram_end{
+     position: absolute;
+     top: 33%;
+     left: 18.7%;
+}
+
+.pages-span{
+     position: absolute;
+     top: 122px;
+     left: 550px;
+     color: #ffffff;
+     font-size: 22px;
+     font-weight: bold;
+     font-family: 'Montserrat', sans-serif;
+}
+
+.about_us_end{
+     position: absolute;
+     color: #ffffff;
+     top: 180px;
+     left: 570px;
+     font-size: 20px;
+     font-family: 'Montserrat', sans-serif;
+}
+
+.classes_end{
+     position: absolute;
+     color: #ffffff;
+     top: 225px;
+     left: 570px;
+     font-size: 20px;
+     font-family: 'Montserrat', sans-serif;
+}
+
+.teachers_end{
+     position: absolute;
+     color: #ffffff;
+     top: 270px;
+     left: 570px;
+     font-size: 20px;
+     font-family: 'Montserrat', sans-serif;
+}
+
+.FAQ_end{
+     position: absolute;
+     color: #ffffff;
+     top: 315px;
+     left: 570px;
+     font-size: 20px;
+     font-family: 'Montserrat', sans-serif;
+}
+
+.contact_us_end{
+     position: absolute;
+     color: #ffffff;
+     top: 360px;
+     left: 570px;
+     font-size: 20px;
+     font-family: 'Montserrat', sans-serif;
+}
+
+.main_contact_end{
+     position: absolute;
+     top: 122px;
+     left: 900px;
+     color: #ffffff;
+     font-size: 22px;
+     font-weight: bold;
+     font-family: 'Montserrat', sans-serif;
+}
+
+.number_end{
+     position: absolute;
+     color: #ffffff;
+     top: 180px;
+     left: 940px;
+     font-size: 20px;
+     font-family: 'Montserrat', sans-serif;
+}
+
+.time_work_end{
+     position: absolute;
+     color: #ffffff;
+     top: 230px;
+     left: 940px;
+     font-size: 20px;
+     font-family: 'Montserrat', sans-serif;
+}
+
+.email_end{
+     position: absolute;
+     color: #ffffff;
+     top: 280px;
+     left: 940px;
+     font-size: 20px;
+     font-family: 'Montserrat', sans-serif;
+}
+
+.phone_end{
+     position: absolute;
+     top: 167px;
+     left: 885px;
+}
+
+.clock_end{
+     position: absolute;
+     top: 215px;
+     left: 885px;
+}
+
+.email_end_logo{
+     position: absolute;
+     top: 275px;
+     left: 895px;
+}

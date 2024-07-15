@@ -1,0 +1,269 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+     <title>base</title>
+</head>
+<body>
+
+     <style>
+          body, html{
+               width: 100%;
+               margin: 0;
+               padding: 0;
+          }
+
+          #headerDiv{
+               width: 100%;
+               background-color: #000000;
+               color: white;
+               font: 20px 'Montserrat', sans-serif;
+               line-height: 67px;
+          }
+
+          .message-logo-a{
+               position: absolute;
+               top: 2.5%;
+               left: 6%;
+          }
+
+          .span-email-a{
+               position: absolute;
+               color: aliceblue;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 25px;
+               top: 3.2%;
+               left: 9%;
+          }
+
+          .span-phone-a{
+               position: relative;
+               font-family: 'Montserrat', sans-serif;
+               top: 3px;
+               left: 36%;
+          }
+
+          .img-phone-a{
+               position: absolute;
+               top: -40%;
+               left: -23%;
+          }
+
+          .facebook-logo-a{
+               position: absolute;
+               top: 2%;
+               left: 85%;
+          }
+
+          .instagram-logo-a{
+               position: absolute;
+               top: 1%;
+               left: 88%;
+          }
+
+          .telegram-logo-a{
+               position: absolute;
+               top: 0.5%;
+               left: 91.5%;
+          }
+
+          #mainPage-a{
+               width: 100%;
+               background-color: white;
+               font-size: 25px;
+               line-height: 80px;
+          }
+
+          .span-self-school-a{
+               position: absolute;
+               font-family: 'Montserrat', sans-serif;
+               top: 10%;
+               left: 2%;
+          }
+
+          .about-us-a{
+               position: absolute;
+               color: #000000;
+               font-family: 'Montserrat', sans-serif;
+               white-space: nowrap;
+               top: 7%;
+               left: 40%;
+               width: 100px;
+               height: 100px;
+          }
+
+          .about-us-a-selected{
+               position: absolute;
+               color: #3A5BCC;
+               font-family: 'Montserrat', sans-serif;
+               white-space: nowrap;
+               top: 7%;
+               left: 40%;
+               width: 100px;
+               height: 100px;
+          }
+
+          .classes-a{
+               position: absolute;
+               color: #000000;
+               font-family: 'Montserrat', sans-serif;
+               top: 7%;
+               left: 50%;
+               width: 100px;
+               height: 100px;
+          }
+
+          .classes-a-selected{
+               position: absolute;
+               color: #3A5BCC;
+               font-family: 'Montserrat', sans-serif;
+               top: 7%;
+               left: 50%;
+               width: 100px;
+               height: 100px;
+          }
+
+          .teachers-a{
+               position: absolute;
+               color: #000000;
+               font-family: 'Montserrat', sans-serif;
+               top: 7%;
+               left: 59%;
+               width: 100px;
+               height: 100px;
+          }
+
+          .teachers-a-selected{
+               position: absolute;
+               color: #3A5BCC;
+               font-family: 'Montserrat', sans-serif;
+               top: 7%;
+               left: 59%;
+               width: 100px;
+               height: 100px;
+          }
+
+          .faq-a{
+               position: absolute;
+               color: #000000;
+               font-family: 'Montserrat', sans-serif;
+               top: 7%;
+               left: 68%;
+               width: 100px;
+               height: 100px;
+          }
+
+          .faq-a-selected{
+               position: absolute;
+               color: #3A5BCC;
+               font-family: 'Montserrat', sans-serif;
+               top: 7%;
+               left: 68%;
+               width: 100px;
+               height: 100px;
+          }
+
+          .contact_us-a{
+               position: absolute;
+               color: #000000;
+               font-family: 'Montserrat', sans-serif;
+               top: 7%;
+               left: 74%;
+               width: 100px;
+               height: 100px;
+          }
+
+          .contact_us-a-selected{
+               position: absolute;
+               color: #3A5BCC;
+               font-family: 'Montserrat', sans-serif;
+               top: 7%;
+               left: 74%;
+               width: 100px;
+               height: 100px;
+          }
+
+          .about-us-a:hover, .classes-a:hover, .teachers-a:hover, .faq-a:hover, .contact_us-a:hover{
+               color: #00bfff;
+          }
+
+          .appointment-a{
+               position: absolute;
+               background-color: #3A5BCC;
+               border-color: #3A5BCC;
+               font-family: 'Montserrat', sans-serif;
+               color: white;
+               width: 158px;
+               height: 50px;
+               border-width: 1px;
+               border-radius: 0%;
+               font: 20px, sans-serif;
+               padding: 12px 24px;
+               top: 13.5%;
+               left: 85%;
+               transition: 0.3s ease;
+          }
+
+          .appointment-a:hover{
+               background-color: transparent;
+               color: #000000;
+          }
+
+          .a_self_school_span{
+               color: #000000;
+          }
+     </style>
+
+     <img class="message-logo-a" src="static/image/message-logo3.jpg" alt="message-logo" width="40px">
+     <span class="span-email-a">itselfschool@gmail.com</span>
+     <div id="headerDiv">
+          <span class="span-phone-a"> <img class="img-phone-a" src="static/image/phone-logo.jpg" alt="phone-logo" width="40px">+380-95-1418-577</span>
+          <a href="https://www.instagram.com//itself.school"><img class="instagram-logo-a" src="static/image/instagram-logo.jpg" alt="instagram-logo" width="55px"></a>
+          <a href="https://t.me/itselfschool"><img class="telegram-logo-a" src="static/image/telegram-logo.jpg" alt="telegram-logo" width="60px"></a>
+     </div>
+     <div id="mainPage-a">
+          <a class="a_self_school_span" href="{% url 'index' %}"><span class="span-self-school"><b>SELF SCHOOL</b></span></a>
+          {% if color %}
+               <a href="{% url 'about_us' %}"><p class="about-us-a-selected">Про нас</p></a>
+          {% else %}
+               <a href="{% url 'about_us' %}"><p class="about-us-a">Про нас</p></a>
+          {% endif %}
+
+          {% if color_for_classes %}
+               <a href="{% url 'classes' %}"><p class="classes-a-selected">Заняття</p></a>
+          {% else %}
+               <a href="{% url 'classes' %}"><p class="classes-a">Заняття</p></a>
+          {% endif %}
+
+          {% if color_for_teachers %}
+               <a href="{% url 'teachers' %}"><p class="teachers-a-selected">Вчителі</p></a>
+          {% else %}
+               <a href="{% url 'teachers' %}"><p class="teachers-a">Вчителі</p></a>
+          {% endif %}
+
+          {% if color_faq_selected %}
+               <a href="{% url 'faq' %}"><p class="faq-a-selected">FAQ</p></a>
+          {% else %}
+               <a href="{% url 'faq' %}"><p class="faq-a">FAQ</p></a>
+          {% endif %}
+
+          {% if color_for_contact_us %}
+               <a href="{% url 'contact_us' %}"><p class="contact_us-a-selected">Зв'язок</p></a>
+          {% else %}
+               <a href="{% url 'contact_us' %}"><p class="contact_us-a">Зв'язок</p></a>
+          {% endif %}
+          <button onclick="redirect_to_contact_us()" class="appointment-a">Зустріч</button>
+     </div>
+
+     <script>
+          function redirect_to_contact_us() {
+               window.location.href = "{% url 'contact_us' %}"
+          }
+     </script>
+
+</body>
+</html>

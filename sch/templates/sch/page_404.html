@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+     <title></title>
+</head>
+<body>
+
+     <style>
+          .h1_page_not_found{
+               position: absolute;
+               top: 35%;
+               left: 30%;
+               font-family: 'Montserrat', sans-serif;
+               font-weight: bold;
+               font-size: 45px;
+          }
+
+          .h4_go_to_main_page{
+               position: absolute;
+               top: 48%;
+               left: 38.5%;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 18px;
+          }
+     </style>
+
+     {% include "sch/base.html" %}
+
+     <h1 class="h1_page_not_found">Сторінка не знайдена</h1>
+     <h4 class="h4_go_to_main_page">Перейти на <a href="{% url 'index' %}">головну сторінку</a></h4>
+
+</body>
+</html>

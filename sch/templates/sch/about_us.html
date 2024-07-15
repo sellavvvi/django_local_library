@@ -1,0 +1,641 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+     <title>About us</title>
+</head>
+<body>
+
+     <!-- 'Montserrat' sans-serif -->
+
+     <style>
+          .main_photo{
+               position: absolute;
+               filter: blur(2px);
+               left: 0%;
+               top: 27%;
+          }
+
+          .about_us_in_main_photo{
+               position: absolute;
+               font-weight: bold;
+               color: #ffffff;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 55px;
+               top: 44%;
+               left: 41%;
+          }
+
+          .h4-about-us{
+               position: absolute;
+               top: 120%;
+               left: 8%;
+               font-family: 'Montserrat', sans-serif;
+               font-weight: bold;
+               color: #3A5BCC;
+          }
+
+          .h1-welcome-to-self-school{
+               position: absolute;
+               top: 125%;
+               left: 8%;
+               font-family: 'Montserrat', sans-serif;
+               color: #000000;
+               font-size: 40px;
+          }
+
+          .span-welcome-to-self-school{
+               position: absolute;
+               top: 147%;
+               left: 8%;
+               font-family: 'Montserrat', sans-serif;
+               color: #000000;
+               font-size: 18px;
+               line-height: 25px;
+          }
+
+          .near_span_welcome_img{
+               position: absolute;
+               filter: blur(1.5px);
+               top: 95%;
+               left: 55%;
+               border-radius: 20px;
+          }
+          
+          .logo_group_of_people{
+               position: absolute;
+               top: 170%;
+               left: 8%;
+          }
+
+          .logo_infinity_symbol_img{
+               position: absolute;
+               top: 196%;
+               left: 8%;
+          }
+
+          .title_near_logo_group_of_people{
+               position: absolute;
+               top: 170%;
+               left: 14%;
+               font-family: 'Montserrat', sans-serif;
+               color: #000000;
+               font-weight: bold;
+               font-size: 22px;
+          }
+
+          .span_near_logo_group_of_people{
+               position: absolute;
+               top: 175%;
+               left: 14%;
+               font-family: 'Montserrat', sans-serif;
+               color: #000000;
+               font-size: 18px;
+          }
+
+          .title_near_logo_infinity{
+               position: absolute;
+               top: 196%;
+               left: 14%;
+               font-family: 'Montserrat', sans-serif;
+               color: #000000;
+               font-weight: bold;
+               font-size: 22px;
+          }
+
+          .span_near_logo_infinity{
+               position: absolute;
+               top: 201%;
+               left: 14%;
+               font-family: 'Montserrat', sans-serif;
+               color: #000000;
+               font-size: 18px;
+          }
+
+          .pid_span_welcome_img{
+               position: absolute;
+               top: 130%;
+               left: 55%;
+               border-radius: 20px;
+          }
+
+          .h4_our_features_main_title{
+               position: absolute;
+               top: 250%;
+               left: 45%;
+               font-family: 'Montserrat', sans-serif;
+               color: #3A5BCC;
+               font-weight: bold;
+          }
+
+          .h1_we_help_you{
+               position: absolute;
+               top: 256%;
+               left: 23%;
+               font-family: 'Montserrat', sans-serif;
+               color: #000000;
+               font-weight: bold;
+               text-align: center;
+               font-size: 40px;
+          }
+
+          .check_mark_1{
+               position: absolute;
+               top: 290%;
+               left: 17%;
+          }
+
+          .check_mark_2{
+               position: absolute;
+               top: 290%;
+               left: 49%;
+          }
+
+          .check_mark_3{
+               position: absolute;
+               top: 290%;
+               left: 80%;
+          }
+
+          .title_flexible_learning{
+               position: absolute;
+               top: 302%;
+               left: 11.5%;
+               font-weight: bold;
+               font-family: 'Montserrat', sans-serif;
+               color: #000000;
+               font-size: 23px;
+          }
+
+          .span_flexible_learning{
+               position: absolute;
+               top: 309%;
+               left: 6.5%;
+               font-family: 'Montserrat', sans-serif;
+               color: #000000;
+               text-align: center;
+               font-size: 18px;
+          }
+
+          .title_interactive_learning{
+               position: absolute;
+               top: 302%;
+               left: 40.5%;
+               font-weight: bold;
+               font-family: 'Montserrat', sans-serif;
+               color: #000000;
+               font-size: 23px;
+          }
+
+          .span_interactie_learning{
+               position: absolute;
+               top: 309%;
+               left: 36.7%;
+               font-family: 'Montserrat', sans-serif;
+               color: #000000;
+               text-align: center;
+               font-size: 18px;
+          }
+          
+          .title_practical_learning{
+               position: absolute;
+               top: 302%;
+               left: 73%;
+               font-weight: bold;
+               font-family: 'Montserrat', sans-serif;
+               color: #000000;
+               font-size: 23px;
+          }
+
+          .span_practical_learning{
+               position: absolute;
+               top: 309%;
+               left: 68%;
+               font-family: 'Montserrat', sans-serif;
+               color: #000000;
+               text-align: center;
+               font-size: 18px;
+          }
+
+          .h4_our_facilities{
+               position: absolute;
+               top: 350%;
+               left: 8%;
+               font-family: 'Montserrat', sans-serif;
+               color: #3A5BCC;
+               font-weight: bold;
+          }
+
+          .h1_online_learning_facilities{
+               position: absolute;
+               top: 355%;
+               left: 8%;
+               font-family: 'Montserrat', sans-serif;
+               color: #000000;
+               font-size: 40px;
+          }
+
+          .span_online_learning_facilities{
+               position: absolute;
+               top: 372%;
+               left: 8%;
+               font-family: 'Montserrat', sans-serif;
+               color: #000000;
+               font-size: 18px;
+          }
+
+          .facilities_1_img{
+               position: absolute;
+               top: 390%;
+               left: 8%;
+               border-radius: 20px;
+          }
+
+          .facilities_2_img{
+               position: absolute;
+               top: 390%;
+               left: 37%;
+               border-radius: 20px;
+          }
+
+          .facilities_3_img{
+               position: absolute;
+               top: 390%;
+               left: 66%;
+               border-radius: 20px;
+          }
+
+          .title_easy_to_use_platform{
+               position: absolute;
+               top: 444%;
+               left: 8%;
+               font-weight: bold;
+               font-family: 'Montserrat', sans-serif;
+               color: #000000;
+               font-size: 22px;
+          }
+
+          .title_live_session{
+               position: absolute;
+               top: 444%;
+               left: 37%;
+               font-weight: bold;
+               font-family: 'Montserrat', sans-serif;
+               color: #000000;
+               font-size: 22px;
+          }
+
+          .title_learning_materials{
+               position: absolute;
+               top: 444%;
+               left: 66%;
+               font-weight: bold;
+               font-family: 'Montserrat', sans-serif;
+               color: #000000;
+               font-size: 22px;
+          }
+
+          .span_easy_to_use_platfrom{
+               position: absolute;
+               top: 455%;
+               left: 8%;
+               font-family: 'Montserrat', sans-serif;
+               color: #000000;
+               font-size: 18px;
+          }
+
+          .span_live_session{
+               position: absolute;
+               top: 450%;
+               left: 37%;
+               font-family: 'Montserrat', sans-serif;
+               color: #000000;
+               font-size: 18px;
+          }
+
+          .span_learning_materials{
+               position: absolute;
+               top: 450%;
+               left: 66%;
+               font-family: 'Montserrat', sans-serif;
+               color: #000000;
+               font-size: 18px;
+          }
+
+          .h4_testimonials{
+               position: absolute;
+               top: 480%;
+               left: 47%;
+               font-family: 'Montserrat', sans-serif;
+               color: #3A5BCC;
+               font-weight: bold;
+          }
+
+          .h1_our_heppy_customers{
+               position: absolute;
+               top: 483%;
+               left: 33%;
+               font-family: 'Montserrat', sans-serif;
+               color: #000000;
+               font-weight: bold;
+               font-size: 40px;
+          }
+
+          .logo_coment_cl{
+               position: absolute;
+               top: 505%;
+               left: 8%;
+          }
+
+          .h1_text_pid_logo_coment{
+               position: absolute;
+               top: 514%;
+               left: 8%;
+               font-family: 'Montserrat', sans-serif;
+               color: #000000;
+               font-size: 20px;
+          }
+
+          .star_1{
+               position: absolute;
+               top: 574%;
+               left: 8%;
+          }
+
+          .star_2{
+               position: absolute;
+               top: 574%;
+               left: 11%;
+          }
+
+          .star_3{
+               position: absolute;
+               top: 574%;
+               left: 14%;
+          }
+
+          .star_4{
+               position: absolute;
+               top: 574%;
+               left: 17%;
+          }
+
+          .star_5{
+               position: absolute;
+               top: 574%;
+               left: 20%;
+          }
+
+          .name_customers_class{
+               position: absolute;
+               top: 580%;
+               left: 8%;
+               color: #3A5BCC;
+               font-family: 'Montserrat', sans-serif;
+               font-weight: bold;
+          }
+
+          .about_us_in_the_end{
+               position: absolute;
+               top: 522%;
+               left: 55%;
+               border-radius: 20px;
+          }
+
+          .end_div_page-a{
+               position: absolute;
+               top: 520%;
+               width: 100%;
+               height: 450px;
+               background-color: #000000;
+          }
+
+          .self_school_in_end-a{
+               position: absolute;
+               top: 120px;
+               left: 12%;
+               color: #ffffff;
+               font-size: 22px;
+               font-weight: bold;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .facebook_end{
+               position: absolute;
+               top: 33%;
+               left: 10.7%;
+          }
+
+          .instagram_end{
+               position: absolute;
+               top: 33%;
+               left: 14.7%;
+          }
+
+          .telegram_end{
+               position: absolute;
+               top: 33%;
+               left: 18.7%;
+          }
+
+          .pages-span{
+               position: absolute;
+               top: 122px;
+               left: 550px;
+               color: #ffffff;
+               font-size: 22px;
+               font-weight: bold;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .about_us_end{
+               position: absolute;
+               color: #ffffff;
+               top: 180px;
+               left: 570px;
+               font-size: 20px;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .classes_end{
+               position: absolute;
+               color: #ffffff;
+               top: 225px;
+               left: 570px;
+               font-size: 20px;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .teachers_end{
+               position: absolute;
+               color: #ffffff;
+               top: 270px;
+               left: 570px;
+               font-size: 20px;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .FAQ_end{
+               position: absolute;
+               color: #ffffff;
+               top: 315px;
+               left: 570px;
+               font-size: 20px;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .contact_us_end{
+               position: absolute;
+               color: #ffffff;
+               top: 360px;
+               left: 570px;
+               font-size: 20px;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .main_contact_end_a{
+               position: absolute;
+               top: 122px;
+               left: 895px;
+               color: #ffffff;
+               font-size: 22px;
+               font-weight: bold;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .number_end{
+               position: absolute;
+               color: #ffffff;
+               top: 180px;
+               left: 940px;
+               font-size: 20px;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .time_work_end{
+               position: absolute;
+               color: #ffffff;
+               top: 230px;
+               left: 940px;
+               font-size: 20px;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .email_end{
+               position: absolute;
+               color: #ffffff;
+               top: 280px;
+               left: 940px;
+               font-size: 20px;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .phone_end{
+               position: absolute;
+               top: 167px;
+               left: 885px;
+          }
+
+          .clock_end{
+               position: absolute;
+               top: 215px;
+               left: 885px;
+          }
+
+          .email_end_logo{
+               position: absolute;
+               top: 275px;
+               left: 895px;
+          }
+     </style>
+
+     {% include 'sch/base.html' with color="blue" %}
+     <div class="main_photo-div">
+          <img class="main_photo" src="static/image/main_about_us.jpg" width="1348px" height="290px" alt="about us">
+          <span class="about_us_in_main_photo">Про нас</span>
+     </div>
+     <div class="about-us-div">
+          <h4 class="h4-about-us">ПРО НАС</h4>
+          <h1 class="h1-welcome-to-self-school">Ласкаво просимо до <br> Self School</h1>
+          <span class="span-welcome-to-self-school">Self School - це сучасна онлайн-школа, яка надає <br>
+               можливість навчатися та отримувати нові знання <br>
+               і навички з комфортом прямо з дому. Ми  <br>
+               пропонуємо широкий спектр курсів, розроблених <br>
+               відповідно до вимог сучасного світу.</span>
+          <img class="logo_group_of_people" src="static/image/logo_group_of_people.png" width="55px" alt="gropu of people">
+          <span class="title_near_logo_group_of_people">Експертні онлайн-інструктори</span>
+          <span class="span_near_logo_group_of_people">Наші експертні онлайн-інструктори пропонують <br>
+               глибокі знання та практичний досвід, <br>
+               щоб допомогти вам отримати нові знання <br>
+               та навички, які можна негайно <br>
+               застосувати в реальному світі.</span>
+          <img class="logo_infinity_symbol_img" src="static/image/logo_infinity_symbol.png" width="55px" alt="infinity symbol">
+          <span class="title_near_logo_infinity">Онлайн підтримка</span>
+          <span class="span_near_logo_infinity">Наша онлайн-служба підтримки завжди готова <br>
+               допомогти вам, надаючи підтримку та <br>
+               керівництво протягом усього вашого <br>
+               навчання.</span>
+          <img class="pid_span_welcome_img" src="static/image/pid_span_welcome.webp" width="530px" alt="pid span welcome">
+     </div>
+     <div class="our_features_div">
+          <h4 class="h4_our_features_main_title">Наші особливості</h4>
+          <h1 class="h1_we_help_you">Ми допоможемо вам покращити <br> свої навички</h1>
+          <img class="check_mark_1" src="static/image/check_mark.webp" width="50px" alt="check mark 1">
+          <span class="title_flexible_learning">Гнучке навчання</span>
+          <span class="span_flexible_learning">Насолоджуйтесь гнучким навчанням, <br>
+               яке відповідає вашому графіку та <br>
+               темпу, дозволяючи навчатися у <br>
+               зручний для вас час.</span>
+          <img class="check_mark_2" src="static/image/check_mark.webp" width="50px" alt="check mark 2">
+          <span class="title_interactive_learning">Інтерактивне навчання</span>
+          <span class="span_interactie_learning">Залучайтеся до інтерактивного навчання <br>
+               що мотивує вас вчитися, закріплювати  <br>
+               поняття і надавати вам реальні приклади <br>
+               та застосування цих прикладів</span>
+          <img class="check_mark_3" src="static/image/check_mark.webp" width="50px" alt="check mark 3">
+          <span class="title_practical_learning">Практичне навчання</span>
+          <span class="span_practical_learning">Отримайте досвід практичного навчання, <br>
+               яке підготує вас до реального світу, <br>
+               пропонуючи практичний досвід і <br>
+               можливості застосувати ваші знання <br>
+               в реальних сценаріях.</span>
+     </div>
+     <div class="our_facilities_div">
+          <h4 class="h4_our_facilities">Наші засоби</h4>
+          <h1 class="h1_online_learning_facilities">Засоби онлайн-навчання</h1>
+          <span class="span_online_learning_facilities">Наші засоби онлайн-навчання створені, щоб надати вам <br>
+               захоплюючий і корисний досвід навчання, пропонуючи <br>
+               найсучасніші інструменти та технології, які допоможуть вам досягти успіху.</span>
+          <img class="facilities_1_img" src="static/image/facilities_1.webp" width="310px" alt="facilities 1">
+          <span class="title_easy_to_use_platform">Проста у використанні <br> платформа</span>
+          <span class="span_easy_to_use_platfrom">Наше просте у використанні <br>
+               онлайн-навчання платформа <br> 
+               дозволяє отримати доступ до вашого <br>
+               курсу та навчального матеріалу <br>
+               з будь-якого місця, у будь-який час.</span>
+
+          <img class="facilities_2_img" src="static/image/live_sessio_new.jpg" width="310px" alt="facilities 2">
+          <span class="title_live_session">Живі сесії</span>
+          <span class="span_live_session">Приєднуйтеся до онлайн-занять з  <br> 
+               інструкторами, що дозволить вам <br> 
+               спілкуватися з однолітками та <br>
+               отримати цінну інформацію та <br>
+               відгуки.</span>
+
+          <img class="facilities_3_img" src="static/image/facilities_3.webp" width="310px" alt="facilities 3">
+          <span class="title_learning_materials">Навчальні матеріали</span>
+          <span class="span_learning_materials">Отримуйте доступ до низки <br>
+               навчальних матеріалів, зокрема <br>
+               відео, тестів та інтерактивних <br>
+               вправ, розроблених, щоб <br>
+               зміцнити ваше навчання та <br>
+               допомогти вам застосувати <br>
+               свої навички в реальному світі.</span>
+     </div>
+     {% include 'sch/end_div.html' with class_for_about="trues" %}
+</body>
+</html>

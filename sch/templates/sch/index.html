@@ -1,0 +1,1098 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+     <title></title>
+</head>
+<body>
+
+     <style>
+          body, html {
+               width: 100%;
+               margin: 0;
+               padding: 0;
+        }
+
+        /* Стилі для div, щоб розтягнувся на всю ширину екрану */
+          #headerDiv {
+               width: 100%;
+               background-color: #000000;
+               color: white;
+               font: 20px 'Montserrat', sans-serif;
+               line-height: 67px;
+        }
+
+          .message-logo{
+               position: absolute;
+               top: 2.5%;
+               left: 6%;
+     }
+
+          .span-email{
+               position: absolute;
+               color: aliceblue;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 25px;
+               top: 3.2%;
+               left: 9%;
+     }
+
+          .span-phone{
+               position: relative;
+               font-family: 'Montserrat', sans-serif;
+               top: 3px;
+               left: 36%;
+          }
+
+          .img-phone{
+               position: absolute;
+               top: -40%;
+               left: -23%;
+          }
+
+          .facebook-logo{
+               position: absolute;
+               top: 2%;
+               left: 85%;
+          }
+
+          .instagram-logo{
+               position: absolute;
+               top: 1%;
+               left: 88%;
+          }
+
+          .telegram-logo{
+               position: absolute;
+               top: 0.5%;
+               left: 91.5%;
+          }
+
+          #mainPage{
+               width: 100%;
+               background-color: white;
+               font-size: 25px;
+               line-height: 80px;
+          }
+
+          .span-self-school{
+               position: absolute;
+               font-family: 'Montserrat', sans-serif;
+               top: 10%;
+               left: 2%;
+          }
+
+          .about-us{
+               position: absolute;
+               color: #000000;
+               font-family: 'Montserrat', sans-serif;
+               white-space: nowrap;
+               top: 7%;
+               left: 40%;
+               width: 100px;
+               height: 100px;
+          }
+
+          .classes{
+               position: absolute;
+               color: #000000;
+               font-family: 'Montserrat', sans-serif;
+               top: 7%;
+               left: 50%;
+               width: 100px;
+               height: 100px;
+          }
+
+          .teachers{
+               position: absolute;
+               color: #000000;
+               font-family: 'Montserrat', sans-serif;
+               top: 7%;
+               left: 59%;
+               width: 100px;
+               height: 100px;
+          }
+
+          .faq{
+               position: absolute;
+               color: #000000;
+               font-family: 'Montserrat', sans-serif;
+               top: 7%;
+               left: 68%;
+               width: 100px;
+               height: 100px;
+          }
+
+          .contact_us{
+               position: absolute;
+               color: #000000;
+               font-family: 'Montserrat', sans-serif;
+               top: 7%;
+               left: 74%;
+               width: 100px;
+               height: 100px;
+          }
+
+          .about-us:hover, .classes:hover, .teachers:hover, .faq:hover, .contact_us:hover{
+               color: #00bfff;
+          }
+
+          .appointment{
+               position: absolute;
+               background-color: #3A5BCC;
+               border-color: #3A5BCC;
+               font-family: 'Montserrat', sans-serif;
+               color: white;
+               width: 158px;
+               height: 50px;
+               border-width: 1px;
+               border-radius: 0%;
+               font: 20px, sans-serif;
+               padding: 12px 24px;
+               top: 13.5%;
+               left: 85%;
+               transition: 0.3s ease;
+          }
+
+          .appointment:hover{
+               background-color: transparent;
+               color: #000000;
+          }
+
+          .div-photo{
+               position: absolute;
+               top: 25%;
+               background-color: white;
+               width: 100%;
+               line-height: 10px;
+          }
+
+          .photo-in-main-div{
+               border-radius: 20px;
+          }
+
+          .weclome-to{
+               position: absolute;
+               color: #3A5BCC;
+               font-size: 16px;
+               font-family: 'Montserrat', sans-serif;
+               top: 10%;
+               left: 54%;
+          }
+
+          .self-main-text{
+               position: absolute;
+               color: #000000;
+               font-size: 48px;
+               font-family: 'Montserrat', sans-serif;
+               opacity: 0;
+               transform: translateY(120px);
+               animation: slideUpSelf 1s forwards;
+               top: 12%;
+               left: 54%;
+               line-height: 55px;
+          }
+
+          @keyframes slideUpSelf {
+               to {
+                    opacity: 1; /* Кінцева прозорість */
+                    transform: translateY(0);
+               }
+          }
+
+          .text-self-main{
+               position: absolute;
+               color: #000000;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 18px;
+               top: 57%;
+               left: 54.2%;
+               line-height: 28px;
+          }
+
+          .get-started{
+               position: absolute;
+               background-color: #3A5BCC;
+               color: white;
+               width: 158px;
+               height: 50px;
+               border-width: 1px;
+               border-radius: 0%;
+               font: 20px, sans-serif;
+               font-family: 'Montserrat', sans-serif;
+               padding: 12px 24px;
+               top: 89%;
+               left: 54%;
+               transition: 0.3s ease;
+          }
+
+          .get-started:hover{
+               background-color: #1f9dc7;
+          }
+
+          .supported-by{
+               position: absolute;
+               width: 100%;
+               top: 115%;
+               background-color: white;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 18px;
+               line-height: 80px;
+          }
+
+          .about{
+               position: absolute;
+               top: 100%;
+               width: 100%;
+               background-color: #ffffff;
+               font-family: 'Montserrat', sans-serif;
+               line-height: 120px;
+          }
+
+          .about p{
+               font-size: 22px;
+               color: #3A5BCC;
+               margin-left: 107px;
+          }
+
+          .we-help-you{
+               position: absolute;
+               top: 55%;
+               left: 7.7%;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 42px;
+               margin-top: 10px;
+               line-height: 60px;
+          }
+
+          .img-we-help-you{
+               position: absolute;
+               top: 150%;
+               left: 7.7%;
+               border-radius: 20px;
+          }
+
+          .txt-join-us{
+               position: absolute;
+               top: 140%;
+               left: 55%;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 18px;
+               line-height: 28px;
+          }
+
+          .about-li-1{
+               position: absolute;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 18px;
+               top: 194.7%;
+               left: 58%;
+               list-style-type: none;
+          }
+
+          .about-li-2{
+               position: absolute;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 18px;
+               top: 225%;
+               left: 58%;
+               list-style-type: none;
+          }
+
+          .about-li-3{
+               position: absolute;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 18px;
+               top: 282%;
+               left: 58%;
+               list-style-type: none;
+               line-height: 25px;
+               white-space: nowrap;
+          }
+
+          .check_mark-1{
+               position: absolute;
+               left: 55%;
+               top: 255%;
+          }
+
+          .check_mark-2{
+               position: absolute;
+               left: 55%;
+               top: 225%;
+          }
+
+          .check_mark-3{
+               position: absolute;
+               left: 55%;
+               top: 285%;
+          }
+
+          .more-about-us{
+               position: absolute;
+               text-align: center;
+               left: 55%;
+               top: 340%;
+               background-color: #3A5BCC;
+               border-color: #3A5BCC;
+               color: white;
+               width: 158px;
+               height: 50px;
+               border-width: 1px;
+               border-radius: 0%;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 14px;
+               padding: 7px 24px;
+               transition: 0.3s ease;
+          }
+
+          .more-about-us:hover{
+               background-color: #1f9dc7;
+          }
+
+          .sixsc-school-project{
+               position: absolute;
+               top: 385%;
+               left: 770px;
+               color: #3A5BCC;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 42px;
+               font-weight: bold;
+          }
+
+          .lessons-school-project{
+               position: absolute;
+               font-size: 22px;
+               font-family: 'Montserrat', sans-serif;
+               left: 57.1%;
+               top: 410%;
+          }
+
+          .three-hundred-school-project{
+               position: absolute;
+               top: 385%;
+               left: 930px;
+               color: #3A5BCC;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 42px;
+               font-weight: bold;
+          }
+
+          .tasks-school-project{
+               position: absolute;
+               font-size: 22px;
+               font-family: 'Montserrat', sans-serif;
+               left: 930px;
+               top: 410%;
+          }
+
+          .number-applicants{
+               position: absolute;
+               top: 385%;
+               left: 1090px;
+               color: #3A5BCC;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 42px;
+               font-weight: bold;
+          }
+
+          * {
+               user-select: none;
+          }
+
+          .text-applicants{
+               position: absolute;
+               font-size: 22px;
+               font-family: 'Montserrat', sans-serif;
+               left: 1090px;
+               top: 410%;
+          }
+
+          .our-program{
+               position: absolute;
+               color: #3A5BCC;
+               font-weight: bold;
+               font-family: 'Montserrat', sans-serif;
+               top: 480%;
+               left: 47%;
+          }
+
+          .grade-programs{
+               position: absolute;
+               color: #000000;
+               font-weight: bold;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 52px;
+               top: 495%;
+               left: 36%;
+          }
+
+          .digital-marketing{
+               position: absolute;
+               top: 265%;
+               left: 10%;
+               border-radius: 20px;
+          }
+
+          .web-development{
+               position: absolute;
+               top: 265%;
+               left: 40%;
+               border-radius: 20px;
+          }
+
+          .graphic-design{
+               position: absolute;
+               top: 265%;
+               left: 70%;
+               border-radius: 20px;
+          }
+
+          .digital-marketing-h2{
+               position: absolute;
+               top: 315%;
+               left: 10%;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .web-development-h2{
+               position: absolute;
+               top: 315%;
+               left: 40%;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .graphic-design-h2{
+               position: absolute;
+               top: 315%;
+               left: 70%;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .digital-marketing-text{
+               position: absolute;
+               top: 325%;
+               left: 10%;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 18px;
+          }
+
+          .web-development-text{
+               position: absolute;
+               top: 325%;
+               left: 40%;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 18px;
+          }
+
+          .graphic-design-text{
+               position: absolute;
+               top: 325%;
+               left: 70%;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 18px;
+          }
+
+          .why-choose-us-span{
+               position: absolute;
+               color: #3A5BCC;
+               font-weight: bold;
+               font-family: 'Montserrat', sans-serif;
+               top: 360%;
+               left: 8%;
+          }
+
+          .why-you-should-choose-us-h1{
+               position: absolute;
+               color: #000000;
+               font-weight: bold;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 50px;
+               top: 360%;
+               left: 8%;
+          }
+
+          .text-why-you-should{
+               position: absolute;
+               color: #000000;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 20px;
+               top: 387%;
+               left: 8%;
+          }
+
+          .flexible-learning-check{
+               position: absolute;
+               top: 410%;
+               left: 8%;
+          }
+
+          .flexible-learning{
+               position: absolute;
+               font-family: 'Montserrat', sans-serif;
+               font-weight: bold;
+               font-size: 22px;
+               top: 410%;
+               left: 14%;
+          }
+
+          .flexible-learning-text{
+               position: absolute;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 18px;
+               top: 415%;
+               left: 14%;
+          }
+
+          .expert-instructors-check{
+               position: absolute;
+               top: 440%;
+               left: 8%;
+          }
+
+          .expert-instructors{
+               position: absolute;
+               font-family: 'Montserrat', sans-serif;
+               font-weight: bold;
+               font-size: 22px;
+               top: 440%;
+               left: 14%;
+          }
+
+          .expert-instructors-text{
+               position: absolute;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 18px;
+               top: 445%;
+               left: 14%;
+          }
+
+          .comprehensive-curriculum-check{
+               position: absolute;
+               top: 472%;
+               left: 8%;
+          }
+
+          .comprehensive-curriculum{
+               position: absolute;
+               font-family: 'Montserrat', sans-serif;
+               font-weight: bold;
+               font-size: 22px;
+               top: 472%;
+               left: 14%;
+          }
+
+          .comprehensive-curriculum-text{
+               position: absolute;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 18px;
+               top: 477%;
+               left: 14%;
+          }
+
+          .img-why-you-should{
+               position: absolute;
+               top: 390%;
+               left: 57%;
+               border-radius: 20px;
+          }
+
+          .Contact_us_in_end{
+               position: absolute;
+               width: 100%;
+               top: 520%;
+          }
+
+          .contact_us_in_end_span{
+               position: absolute;
+               color: #3A5BCC;
+               font-weight: bold;
+               font-family: 'Montserrat', sans-serif;
+               top: 590%;
+               left: 8%;
+          }
+
+          .h1_contact_us_in_the_end{
+               position: absolute;
+               top: 600%;
+               left: 8%;
+               font-weight: bold;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 35px;
+          }
+
+          .span_contact_us_into_h1{
+               position: absolute;
+               top: 160px;
+               left: 8%;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 20px;
+          }
+
+          .logo_phone_end{
+               position: absolute;
+               top: 300px;
+               left: 10%;
+          }
+
+          .number_phone_end{
+               position: absolute;
+               top: 360px;
+               left: 9.7%;
+               font-weight: bold;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 30px;
+          }
+
+          .number_phone_in_end{
+               position: absolute;
+               top: 410px;
+               left: 9.7%;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 18px;
+          }
+
+          .email_logo_in_end{
+               position: absolute;
+               top: 300px;
+               left: 32%;
+          }
+
+          .email_text_in_end{
+               position: absolute;
+               top: 360px;
+               left: 31.7%;
+               font-weight: bold;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 30px;
+          }
+
+          .email_email_in_end{
+               position: absolute;
+               top: 410px;
+               left: 31.7%;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 18px;
+          }
+
+          .but_send_a_message{
+               position: absolute;
+               background-color: #3A5BCC;
+               top: 500px;
+               left: 8%;
+               font-weight: bold;
+               font-family: 'Montserrat', sans-serif;
+               border-color: #3A5BCC;
+               color: white;
+               width: 170px;
+               height: 50px;
+               border-width: 1px;
+               border-radius: 0%;
+               font: 20px, sans-serif;
+               padding: 8px 24px;
+               transition: 0.3s ease;
+          }
+
+          .but_send_a_message:hover{
+               background-color: #1f9dc7;
+          }
+
+          .end_photo{
+               position: absolute;
+               top: 600%;
+               left: 58%;
+               border-radius: 20px;
+          }
+
+          .end_div_page{
+               position: absolute;
+               top: 630%;
+               width: 100%;
+               height: 450px;
+               background-color: #000000;
+          }
+
+          .self_school_in_end{
+               position: absolute;
+               top: 120px;
+               left: 12%;
+               color: #ffffff;
+               font-size: 22px;
+               font-weight: bold;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .facebook_end{
+               position: absolute;
+               top: 33%;
+               left: 10.7%;
+          }
+
+          .instagram_end{
+               position: absolute;
+               top: 33%;
+               left: 14.7%;
+          }
+
+          .telegram_end{
+               position: absolute;
+               top: 33%;
+               left: 18.7%;
+          }
+
+          .pages-span{
+               position: absolute;
+               top: 122px;
+               left: 550px;
+               color: #ffffff;
+               font-size: 22px;
+               font-weight: bold;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .about_us_end{
+               position: absolute;
+               color: #ffffff;
+               top: 180px;
+               left: 570px;
+               font-size: 20px;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .classes_end{
+               position: absolute;
+               color: #ffffff;
+               top: 225px;
+               left: 570px;
+               font-size: 20px;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .teachers_end{
+               position: absolute;
+               color: #ffffff;
+               top: 270px;
+               left: 570px;
+               font-size: 20px;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .FAQ_end{
+               position: absolute;
+               color: #ffffff;
+               top: 315px;
+               left: 570px;
+               font-size: 20px;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .contact_us_end{
+               position: absolute;
+               color: #ffffff;
+               top: 360px;
+               left: 570px;
+               font-size: 20px;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .main_contact_end{
+               position: absolute;
+               top: 122px;
+               left: 890px;
+               color: #ffffff;
+               font-size: 22px;
+               font-weight: bold;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .number_end{
+               position: absolute;
+               color: #ffffff;
+               top: 180px;
+               left: 940px;
+               font-size: 20px;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .time_work_end{
+               position: absolute;
+               color: #ffffff;
+               top: 230px;
+               left: 940px;
+               font-size: 20px;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .email_end{
+               position: absolute;
+               color: #ffffff;
+               top: 280px;
+               left: 940px;
+               font-size: 20px;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .phone_end{
+               position: absolute;
+               top: 167px;
+               left: 885px;
+          }
+
+          .clock_end{
+               position: absolute;
+               top: 215px;
+               left: 885px;
+          }
+
+          .email_end_logo{
+               position: absolute;
+               top: 275px;
+               left: 895px;
+          }
+
+          .a_self_school_span{
+               color: #000000;
+          }
+     </style>
+
+     <header>
+          <img class="message-logo" src="static/image/message-logo3.jpg" alt="message-logo" width="40px">
+          <span class="span-email">itselfschool@gmail.com</span>
+          <div id="headerDiv">
+               <span class="span-phone"> <img class="img-phone" src="static/image/phone-logo.jpg" alt="phone-logo" width="40px">+380-95-1418-577</span>
+               <a href="https://www.instagram.com//itself.school"><img class="instagram-logo" src="static/image/instagram-logo.jpg" alt="instagram-logo" width="55px"></a>
+               <a href="https://t.me/itselfschool"><img class="telegram-logo" src="static/image/telegram-logo.jpg" alt="telegram-logo" width="60px"></a>
+          </div>
+          <div id="mainPage">
+               <a class="a_self_school_span" href="{% url 'index' %}"><span class="span-self-school"><b>SELF SCHOOL</b></span></a>
+               <a href="{% url 'about_us' %}"><p class="about-us">Про нас</p></a>
+               <a href="{% url 'classes' %}"><p class="classes">Заняття</p></a>
+               <a href="{% url 'teachers' %}"><p class="teachers">Вчителі</p></a>
+               <a href="{% url 'faq' %}"><p class="faq">FAQ</p></a>
+               <a href="{% url 'contact_us' %}"><p class="contact_us">Зв'язок</p></a>
+               <button onclick="redirect_contact()" class="appointment">Зустріч</button>
+          </div>
+          <div class="div-photo">
+               <img class="photo-in-main-div" src="static/image/main_zverhy.webp" width="690px" alt="for-main-page">
+               <h3 class="weclome-to">Ласкаво просимо до Self School</h3>
+               <h1 class="self-main-text">Self School - <br>сучасна освіта<br>у вас під рукою</h1>
+               <p class="text-self-main">Self School — це сучасна онлайн-платформа для навчання, <br>
+                    яка пропонує комплексні курси з вивчення python, <br>
+                    веб-розробки та графічного дизайну.</p>
+               <button class="get-started"><b>РОЗПОЧАТИ</b></button>
+          </div>
+          <div class="about">
+               <p><b>Про нас</b></p>
+               <h1 class="we-help-you">Ми допоможемо вам <br> будувати краще майбутнє</h1>
+               <img class="img-we-help-you" src="static/image/we_help_you_build4.webp" width="500px" alt="we_help_you">
+               <span class="txt-join-us">Приєднуйтеся до спільноти мотивованих учнів та <br>
+                    досвідчених інструкторів, які захоплені  <br>
+                    обміном знаннями та надають студентам  <br>
+                    можливість досягти успіху у своїй кар'єрі.</span>
+               <li class="about-li-1"><b>Гнучке та доступне навчання</b></li>
+               <li class="about-li-2"><b>Досвідчені інструктори з реальними знаннями</b></li>
+               <li class="about-li-3"><b>Комплексна навчальна програма, що охоплює ключові <br> теми та навички</b></li>
+               <img class="check_mark-1" src="static/image/check_mark.webp" width="22px" alt="check_mark">
+               <img class="check_mark-2" src="static/image/check_mark.webp" width="22px" alt="check_mark">
+               <img class="check_mark-3" src="static/image/check_mark.webp" width="22px" alt="check_mark">
+               <button onclick="redirect_to_about_us()" class="more-about-us"><b>Більше про нас</b></button>
+               <span class="sixsc-school-project" data-max="60">0</span>
+               <span class="lessons-school-project">Уроки</span>
+               <span class="three-hundred-school-project" data-max="300">0</span>
+               <span class="tasks-school-project">Завдання</span>
+               <span class="number-applicants" data-max="200">0</span>
+               <span class="text-applicants">Заявники</span>
+               <span class="our-program">Наша програма</span>
+               <h1 class="grade-programs">Наші програми</h1>
+                    
+               <script>
+                    document.addEventListener('DOMContentLoaded', (event) => {
+                    var options = {
+                         root: null,  // це значення null означає, що спостерігач буде спостерігати за зоною видимості вікна браузера
+                         rootMargin: '0px',
+                         threshold: 0.5  // коли 50% елемента буде видимим, спрацьовує callback
+                    };
+
+                    var callback = function(entries, observer) {
+                         entries.forEach(entry => {
+                              if (entry.isIntersecting) {
+                                   var number = entry.target;
+                                   var start = +number.innerHTML, end = +number.dataset.max;
+                                   var interval = setInterval(function() {
+                                        number.innerHTML = start + '+';
+                                        start++;
+                                        if (start > end) {
+                                        clearInterval(interval);
+                                        observer.unobserve(number);
+                                        }
+                                   }, 20);
+                              }
+                         });
+                    };
+
+                    var observer = new IntersectionObserver(callback, options);
+
+                    var numbers = document.querySelectorAll('.sixsc-school-project');
+                    numbers.forEach(number => {
+                         observer.observe(number);
+                    });
+                    });
+
+
+                    document.addEventListener('DOMContentLoaded', (event) => {
+                    var options = {
+                         root: null,  // спостерігаємо за вікном браузера
+                         rootMargin: '0px',
+                         threshold: 0.5  // коли 50% елемента буде видимим, спрацьовує callback
+                    };
+
+                    var callback = function(entries, observer) {
+                         entries.forEach(entry => {
+                              if (entry.isIntersecting) {
+                                   var number = entry.target;
+                                   var start = +number.innerHTML, end = +number.dataset.max;
+                                   var interval = setInterval(function() {
+                                        number.innerHTML = start + '+';
+                                        start++;
+                                        if (start > end) {
+                                        clearInterval(interval);
+                                        observer.unobserve(number);
+                                        }
+                                   }, 5);
+                              }
+                         });
+                    };
+
+                    var observer = new IntersectionObserver(callback, options);
+
+                    var numbers = document.querySelectorAll('.three-hundred-school-project');
+                    numbers.forEach(number => {
+                         observer.observe(number);
+                    });
+                    });
+
+                    document.addEventListener('DOMContentLoaded', (event) => {
+                    var options = {
+                         root: null,  // observe the viewport
+                         rootMargin: '0px',
+                         threshold: 0.5  // trigger callback when 50% of the element is visible
+                    };
+
+                    var callback = function(entries, observer) {
+                         entries.forEach(entry => {
+                              if (entry.isIntersecting) {
+                                   var number = entry.target;
+                                   var start = +number.innerHTML, end = +number.dataset.max;
+                                   var interval = setInterval(function() {
+                                        number.innerHTML = start + '+';
+                                        start++;
+                                        if (start > end) {
+                                        clearInterval(interval);
+                                        observer.unobserve(number);
+                                        }
+                                   }, 7);
+                              }
+                         });
+                    };
+
+                    var observer = new IntersectionObserver(callback, options);
+
+                    var numbers = document.querySelectorAll('.number-applicants');
+                    numbers.forEach(number => {
+                         observer.observe(number);
+                    });
+                    });
+
+                    function redirect_to_about_us() {
+                         window.location.href = "{% url 'about_us' %}"
+                    }
+
+               </script>
+          </div>
+          <div class="grade-programs-div">   
+               <img class="digital-marketing" src="static/image/digital-marketing.webp" width="300px" alt="digital marketing">
+               <img class="web-development" src="static/image/web-development.webp" width="300px" alt="wev development">
+               <img class="graphic-design" src="static/image/graphic-design.webp" width="300px" alt="graphic design">
+               <h2 class="digital-marketing-h2">Вивчення python</h2>
+               <span class="digital-marketing-text">Досліджуйте найновіші концепції та <br> 
+                    техніки програмування на Python, від <br> 
+                    основних принципів до розробки  <br> 
+                    веб-додатків та обробки даних, <br> 
+                    за допомогою нашого комплексного <br> 
+                    курсу з вивчення Python.</span>
+               <h2 class="web-development-h2">Розробка веб-сайтів</h2>
+               <span class="web-development-text">Оволодій основами веб-розробки, <br> 
+                    від HTML і CSS до JavaScript і PHP, за <br>
+                    допомогою нашого комплексного <br> 
+                    курсу з веб-розробки.</span>
+               <h2 class="graphic-design-h2">Графічний дизайн</h2>
+               <span class="graphic-design-text">Досліджуйте принципи графічного <br>
+                    дизайну, від теорії кольору <br>
+                    і типографіки до композиції <br>
+                    та композиції, за допомогою <br>
+                    нашого комплексного курсу <br>
+                    з графічного дизайну.</span>
+          </div>
+          <div class="why-choose-us">
+               <span class="why-choose-us-span">Чому обрати нас</span>
+               <h1 class="why-you-should-choose-us-h1">Чому вам слід <br> обрати нас</h1>
+               <span class="text-why-you-should">Користуйтеся нашою гнучкою та доступною <br>
+                    онлайн-платформою навчання, яка дозволяє вам <br>
+                    вчитися у своєму темпі і за власним розкладом з <br>
+                    будь-якої точки світу.</span>
+               <img class="flexible-learning-check" src="static/image/check_mark.webp" alt="check mark" width="60px">
+               <span class="flexible-learning">Гнучке навчання</span>
+               <span class="flexible-learning-text">Вчіться у своєму темпі і за <br>
+                    своїм розкладом з будь-якої точки <br> 
+                    світу завдяки нашій гнучкій та <br> 
+                    доступній онлайн-платформі навчання.</span>
+               
+               <img class="expert-instructors-check" src="static/image/check_mark.webp" alt="check mark" width="60px">
+               <span class="expert-instructors">Досвідчені інструктори</span>
+               <span class="expert-instructors-text">Вчіться від досвідчених <br> 
+                    інструкторів, які вносять реальний <br> 
+                    досвід і відкриття в кожний урок, <br>
+                    забезпечуючи глибоке розуміння і <br>
+                    натхнення в кожній темі.</span>
+
+               <img class="comprehensive-curriculum-check" src="static/image/check_mark.webp" alt="check mark" width="60px">
+               <span class="comprehensive-curriculum">Комплексна навчальна програма</span>
+               <span class="comprehensive-curriculum-text">Досліджуйте комплексну навчальну <br>
+                    програму, яка охоплює всі основні теми <br>
+                    і навички, забезпечуючи всебічну і <br>
+                    практичну освіту в цифровому маркетингу, <br>
+                    веб-розробці та графічному дизайні.</span>
+               <img class="img-why-you-should" src="static/image/why_choose_us.webp" width="430px" alt="">
+          </div>
+          <div class="Contact_us_in_end">
+               <span class="contact_us_in_end_span">Зв'язок з нами</span>
+               <h1 class="h1_contact_us_in_the_end">Приєднуйтесь до Self School <br>і створюйте краще майбутнє <br> вже сьогодні.</h1>
+               <span class="span_contact_us_into_h1">Розпочніть свою подорож до успіху разом з Self School, <br>
+                    де наші комплексні курси та досвідчене керівництво <br>
+                    надають вам можливість досягти ваших цілей і <br>
+                    побудувати краще майбутнє.</span>
+               <img class="logo_phone_end" src="static/image/logo_phone.jpg" width="50px" alt="logo phone">
+               <span class="number_phone_end">Phone:</span>
+               <span class="number_phone_in_end">+380-95-1418-577</span>
+               <img class="email_logo_in_end" src="static/image/logo_email.jpg" width="50px" alt="logo email">
+               <span class="email_text_in_end">Email:</span>
+               <span class="email_email_in_end">itselfschool@gmail.com</span>
+               <button onclick="redirect_contact()" class="but_send_a_message">Надіслати повідомлення</button>
+               <img class="end_photo" src="static/image/end_index.jpg" width="460px" alt="end_photo">
+          </div>
+          {% include 'sch/end_div.html' %}
+     </header>
+     <!-- That site - https://10web-site.ai/62/helpful-aardvark/ -->
+
+     <script>
+          function redirect_contact() {
+               window.location.href = "{% url 'contact_us' %}"
+          }
+     </script>
+
+</body>
+</html>

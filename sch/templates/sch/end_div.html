@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>end_div</title>
+</head>
+<body>
+
+     <style>
+          .end_div_page{
+               position: absolute;
+               top: 630%;
+               width: 100%;
+               height: 450px;
+               background-color: #000000;
+          }
+
+          .end_div_page_about_us{
+               position: absolute;
+               top: 500%;
+               width: 100%;
+               height: 450px;
+               background-color: #000000;
+          }
+
+          .end_div_page_classes{
+               position: absolute;
+               top: 620%;
+               width: 100%;
+               height: 450px;
+               background-color: #000000;
+          }
+
+          .end_div_page_teachers{
+               position: absolute;
+               top: 540%;
+               width: 100%;
+               height: 450px;
+               background-color: #000000;
+          }
+
+          .end_div_page_faq{
+               position: absolute;
+               top: 350%;
+               width: 100%;
+               height: 450px;
+               background-color: #000000;
+          }
+
+          .end_div_page_contact_us{
+               position: absolute;
+               top: 243%;
+               width: 100%;
+               height: 450px;
+               background-color: #000000;
+          }
+
+          .self_school_in_end{
+               position: absolute;
+               top: 120px;
+               left: 12%;
+               color: #ffffff;
+               font-size: 22px;
+               font-weight: bold;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .facebook_end{
+               position: absolute;
+               top: 33%;
+               left: 10.9%;
+          }
+
+          .instagram_end{
+               position: absolute;
+               top: 33%;
+               left: 12.9%;
+          }
+
+          .telegram_end{
+               position: absolute;
+               top: 33%;
+               left: 16.7%;
+          }
+
+          .pages-span{
+               position: absolute;
+               top: 122px;
+               left: 550px;
+               color: #ffffff;
+               font-size: 22px;
+               font-weight: bold;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .about_us_end{
+               position: absolute;
+               color: #ffffff;
+               top: 180px;
+               left: 570px;
+               font-size: 20px;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .classes_end{
+               position: absolute;
+               color: #ffffff;
+               top: 225px;
+               left: 570px;
+               font-size: 20px;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .teachers_end{
+               position: absolute;
+               color: #ffffff;
+               top: 270px;
+               left: 570px;
+               font-size: 20px;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .FAQ_end{
+               position: absolute;
+               color: #ffffff;
+               top: 315px;
+               left: 570px;
+               font-size: 20px;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .contact_us_end{
+               position: absolute;
+               color: #ffffff;
+               top: 360px;
+               left: 570px;
+               font-size: 20px;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .main_contact_end{
+               position: absolute;
+               top: 122px;
+               left: 890px;
+               color: #ffffff;
+               font-size: 22px;
+               font-weight: bold;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .number_end{
+               position: absolute;
+               color: #ffffff;
+               top: 180px;
+               left: 940px;
+               font-size: 20px;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .time_work_end{
+               position: absolute;
+               color: #ffffff;
+               top: 230px;
+               left: 940px;
+               font-size: 20px;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .email_end{
+               position: absolute;
+               color: #ffffff;
+               top: 280px;
+               left: 940px;
+               font-size: 20px;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .phone_end{
+               position: absolute;
+               top: 167px;
+               left: 885px;
+          }
+
+          .clock_end{
+               position: absolute;
+               top: 215px;
+               left: 885px;
+          }
+
+          .email_end_logo{
+               position: absolute;
+               top: 275px;
+               left: 895px;
+          }
+     </style>
+
+     {% if class_for_about %}
+          <div class="end_div_page_about_us">
+               <a href="{% url 'index' %}"><span class="self_school_in_end">Self school</span></a>
+               <a href="https://www.instagram.com//itself.school"><img class="instagram_end" src="static/image/instagram-logo.jpg" width="48px" alt="facebook-logo"></a>
+               <a href="https://t.me/itselfschool"><img class="telegram_end" src="static/image/telegram-logo.jpg" width="48px" alt="facebook-logo"></a>
+               <span class="pages-span">Сторінки</span>
+               <a href="{% url 'about_us' %}"><span class="about_us_end">Про нас</span></a>
+               <a href="{% url 'classes' %}"><span class="classes_end">Заняття</span></a>
+               <a href="{% url 'teachers' %}"><span class="teachers_end">Вчителі</span></a>
+               <a href="{% url 'faq' %}"><span class="FAQ_end">FAQ</span></a>
+               <a href="{% url 'contact_us' %}"><span class="contact_us_end">Зв'язок з нами</span></a>
+               <span class="main_contact_end">Контактні данні</span>
+               <span class="number_end">+380-95-1418-577</span>
+               <span class="time_work_end">Mon - Fri : 9 am - 11 pm</span>
+               <span class="email_end">itselfschool@gmail.com</span>
+               <img class="phone_end" src="static/image/phone-logo.jpg" width="50px" alt="phone logo">
+               <img class="clock_end" src="static/image/clock_logo.jpg" width="50px" alt="clock logo">
+               <img class="email_end_logo" src="static/image/message-logo3.jpg" width="35px" alt="message logo">
+          </div>
+     {% elif class_for_classes %}
+          <div class="end_div_page_classes">
+               <a href="{% url 'index' %}"><span class="self_school_in_end">Self school</span></a>
+               <a href="https://www.instagram.com//itself.school"><img class="instagram_end" src="static/image/instagram-logo.jpg" width="48px" alt="facebook-logo"></a>
+               <a href="https://t.me/itselfschool"><img class="telegram_end" src="static/image/telegram-logo.jpg" width="48px" alt="facebook-logo"></a>
+               <span class="pages-span">Сторінки</span>
+               <a href="{% url 'about_us' %}"><span class="about_us_end">Про нас</span></a>
+               <a href="{% url 'classes' %}"><span class="classes_end">Заняття</span></a>
+               <a href="{% url 'teachers' %}"><span class="teachers_end">Вчителі</span></a>
+               <a href="{% url 'faq' %}"><span class="FAQ_end">FAQ</span></a>
+               <a href="{% url 'contact_us' %}"><span class="contact_us_end">Зв'язок з нами</span></a>
+               <span class="main_contact_end">Контактні данні</span>
+               <span class="number_end">+380-95-1418-577</span>
+               <span class="time_work_end">Mon - Fri : 9 am - 11 pm</span>
+               <span class="email_end">itselfschool@gmail.com</span>
+               <img class="phone_end" src="static/image/phone-logo.jpg" width="50px" alt="phone logo">
+               <img class="clock_end" src="static/image/clock_logo.jpg" width="50px" alt="clock logo">
+               <img class="email_end_logo" src="static/image/message-logo3.jpg" width="35px" alt="message logo">
+          </div>
+     {% elif classes_for_teachers %}
+          <div class="end_div_page_teachers">
+               <span class="self_school_in_end">Self school</span>
+               <a href="https://www.instagram.com//itself.school"><img class="instagram_end" src="static/image/instagram-logo.jpg" width="48px" alt="facebook-logo"></a>
+               <a href="https://t.me/itselfschool"><img class="telegram_end" src="static/image/telegram-logo.jpg" width="48px" alt="facebook-logo"></a>
+               <span class="pages-span">Сторінки</span>
+               <a href="{% url 'about_us' %}"><span class="about_us_end">Про нас</span></a>
+               <a href="{% url 'classes' %}"><span class="classes_end">Заняття</span></a>
+               <a href="{% url 'teachers' %}"><span class="teachers_end">Вчителі</span></a>
+               <a href="{% url 'faq' %}"><span class="FAQ_end">FAQ</span></a>
+               <a href="{% url 'contact_us' %}"><span class="contact_us_end">Зв'язок з нами</span></a>
+               <span class="main_contact_end">Контактні дані</span>
+               <span class="number_end">(205) 555-0100</span>
+               <span class="time_work_end">Mon - Fri : 9 am - 11 pm</span>
+               <span class="email_end">email@test.test</span>
+               <img class="phone_end" src="static/image/phone-logo.jpg" width="50px" alt="phone logo">
+               <img class="clock_end" src="static/image/clock_logo.jpg" width="50px" alt="clock logo">
+               <img class="email_end_logo" src="static/image/message-logo3.jpg" width="35px" alt="message logo">
+          </div>
+     {% elif classes_for_faq %}
+          <div class="end_div_page_faq">
+               <a href="{% url 'index' %}"><span class="self_school_in_end">Self school</span></a>
+               <a href="https://www.instagram.com//itself.school"><img class="instagram_end" src="static/image/instagram-logo.jpg" width="48px" alt="facebook-logo"></a>
+               <a href="https://t.me/itselfschool"><img class="telegram_end" src="static/image/telegram-logo.jpg" width="48px" alt="facebook-logo"></a>
+               <span class="pages-span">Сторінки</span>
+               <a href="{% url 'about_us' %}"><span class="about_us_end">Про нас</span></a>
+               <a href="{% url 'classes' %}"><span class="classes_end">Заняття</span></a>
+               <a href="{% url 'teachers' %}"><span class="teachers_end">Вчителі</span></a>
+               <a href="{% url 'faq' %}"><span class="FAQ_end">FAQ</span></a>
+               <a href="{% url 'contact_us' %}"><span class="contact_us_end">Зв'язок з нами</span></a>
+               <span class="main_contact_end">Контактні данні</span>
+               <span class="number_end">+380-95-1418-577</span>
+               <span class="time_work_end">Mon - Fri : 9 am - 11 pm</span>
+               <span class="email_end">itselfschool@gmail.com</span>
+               <img class="phone_end" src="static/image/phone-logo.jpg" width="50px" alt="phone logo">
+               <img class="clock_end" src="static/image/clock_logo.jpg" width="50px" alt="clock logo">
+               <img class="email_end_logo" src="static/image/message-logo3.jpg" width="35px" alt="message logo">
+          </div>
+     {% elif classes_for_contact_us %}
+          <div class="end_div_page_contact_us">
+               <a href="{% url 'index' %}"><span class="self_school_in_end">Self school</span></a>
+               <a href="https://www.instagram.com//itself.school"><img class="instagram_end" src="static/image/instagram-logo.jpg" width="48px" alt="facebook-logo"></a>
+               <a href="https://t.me/itselfschool"><img class="telegram_end" src="static/image/telegram-logo.jpg" width="48px" alt="facebook-logo"></a>
+               <span class="pages-span">Сторінки</span>
+               <a href="{% url 'about_us' %}"><span class="about_us_end">Про нас</span></a>
+               <a href="{% url 'classes' %}"><span class="classes_end">Заняття</span></a>
+               <a href="{% url 'teachers' %}"><span class="teachers_end">Вчителі</span></a>
+               <a href="{% url 'faq' %}"><span class="FAQ_end">FAQ</span></a>
+               <a href="{% url 'contact_us' %}"><span class="contact_us_end">Зв'язок з нами</span></a>
+               <span class="main_contact_end">Контактні данні</span>
+               <span class="number_end">+380-95-1418-577</span>
+               <span class="time_work_end">Mon - Fri : 9 am - 11 pm</span>
+               <span class="email_end">itselfschool@gmail.com</span>
+               <img class="phone_end" src="static/image/phone-logo.jpg" width="50px" alt="phone logo">
+               <img class="clock_end" src="static/image/clock_logo.jpg" width="50px" alt="clock logo">
+               <img class="email_end_logo" src="static/image/message-logo3.jpg" width="35px" alt="message logo">
+          </div>
+     {% else %}
+          <div class="end_div_page">
+               <a href="{% url 'index' %}"><span class="self_school_in_end">Self school</span></a>
+               <a href="https://www.instagram.com//itself.school"><img class="instagram_end" src="static/image/instagram-logo.jpg" width="48px" alt="facebook-logo"></a>
+               <a href="https://t.me/itselfschool"><img class="telegram_end" src="static/image/telegram-logo.jpg" width="48px" alt="facebook-logo"></a>
+               <span class="pages-span">Сторінки</span>
+               <a href="{% url 'about_us' %}"><span class="about_us_end">Про нас</span></a>
+               <a href="{% url 'classes' %}"><span class="classes_end">Заняття</span></a>
+               <a href="{% url 'teachers' %}"><span class="teachers_end">Вчителі</span></a>
+               <a href="{% url 'faq' %}"><span class="FAQ_end">FAQ</span></a>
+               <a href="{% url 'contact_us' %}"><span class="contact_us_end">Зв'язок з нами</span></a>
+               <span class="main_contact_end">Контактні данні</span>
+               <span class="number_end">+380-95-1418-577</span>
+               <span class="time_work_end">Mon - Fri : 9 am - 11 pm</span>
+               <span class="email_end">itselfschool@gmail.com</span>
+               <img class="phone_end" src="static/image/phone-logo.jpg" width="50px" alt="phone logo">
+               <img class="clock_end" src="static/image/clock_logo.jpg" width="50px" alt="clock logo">
+               <img class="email_end_logo" src="static/image/message-logo3.jpg" width="35px" alt="message logo">
+          </div>
+     {% endif %}
+</body>
+</html>

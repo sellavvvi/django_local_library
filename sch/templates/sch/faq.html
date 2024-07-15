@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>FAQ</title>
+</head>
+<body>
+
+     <style>
+          .faq_main_photo{
+               position: absolute;
+               filter: blur(2px);
+               left: 0%;
+               top: 27%;
+          }
+
+          .h1_faq_in_main_photo{
+               position: absolute;
+               font-weight: bold;
+               color: #ffffff;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 45px;
+               top: 40%;
+               left: 26%;
+          }
+
+          .h4_faqs{
+               position: absolute;
+               font-weight: bold;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 17px;
+               color: #3A5BCC;
+               top: 95%;
+               left: 47.5%;
+          }
+
+          .h1_frequently_asked_questions{
+               position: absolute;
+               font-weight: bold;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 39px;
+               color: #000000;
+               top: 100%;
+               left: 27%;
+          }
+
+          #accordion{
+               position: absolute;
+               top: 105%;
+               left: 4%;
+               margin: 100px auto;
+               width: 550px;
+          }
+
+          #accordion li{
+               list-style: none;
+               width: 100%;
+               margin-bottom: 10px;
+               background: #ffffff;
+               padding: 10px;
+               border-radius: 4px;
+          }
+
+          #accordion li label{
+               padding: 10px;
+               display: flex;
+               align-items: center;
+               justify-content: space-between;
+               font-size: 28px;
+               font-weight: bold;
+               font-family: 'Montserrat', sans-serif;
+               cursor: pointer;
+               color: #3A5BCC;
+          }
+
+          #accordion li label span{
+               transform: rotate(90deg);
+               font-size: 26px;
+               font-weight: bold;
+               color: #333;
+          }
+
+          #accordion label + input[type="radio"]{
+               display: none;
+          }
+
+          #accordion .content{
+               padding: 0 10px;
+               line-height: 26px;
+               max-height: 0;
+               overflow: hidden;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 18px;
+               transition: max-height 0.5s;
+
+          }
+
+          #accordion label + input[type="radio"]:checked + .content{
+               max-height: 400px;
+          }
+
+          #accordion_two{
+               position: absolute;
+               top: 105%;
+               left: 50%;
+               margin: 100px auto;
+               width: 550px;
+          }
+
+          #accordion_two li{
+               list-style: none;
+               width: 100%;
+               margin-bottom: 10px;
+               background: #ffffff;
+               padding: 10px;
+               border-radius: 4px;
+          }
+
+          #accordion_two li label{
+               padding: 10px;
+               display: flex;
+               align-items: center;
+               justify-content: space-between;
+               font-size: 28px;
+               font-weight: bold;
+               font-family: 'Montserrat', sans-serif;
+               cursor: pointer;
+               color: #3A5BCC;
+          }
+
+          #accordion_two li label span{
+               transform: rotate(90deg);
+               font-size: 26px;
+               font-weight: bold;
+               color: #333;
+          }
+
+          #accordion_two label + input[type="radio"]{
+               display: none;
+          }
+
+          #accordion_two .content_first_2 {
+               padding: 0 10px;
+               line-height: 26px;
+               max-height: 0;
+               overflow: hidden;
+               font-size: 18px;
+               font-family: 'Montserrat', sans-serif;
+               transition: max-height 0.5s;
+          }
+
+          #accordion_two label + input[type="radio"]:checked + .content_first_2 {
+               max-height: 400px; /* Змінив max-width на max-height */
+          }
+
+          .h4_how_it_works{
+               position: absolute;
+               font-weight: bold;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 17px;
+               color: #3A5BCC;
+               top: 230%;
+               left: 46%;
+          }
+
+          .h1_our_learning_process{
+               position: absolute;
+               font-weight: bold;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 39px;
+               color: #000000;
+               top: 235%;
+               left: 33%;
+          }
+
+          .frame_01{
+               position: absolute;
+               top: 270%;
+               left: 9%;
+               background-color: #3A5BCC;
+               border-radius: 15px;
+               border-width: 0px;
+          }
+
+          .span_01{
+               position: absolute;
+               top: 272.5%;
+               left: 10.3%;
+               font-size: 28px;
+               font-family: 'Montserrat', sans-serif;
+               font-weight: bold;
+               color: #ffffff;
+          }
+
+          .h1_select_your_course{
+               position: absolute;
+               top: 282%;
+               left: 9%;
+               font-family: 'Montserrat', sans-serif;
+               font-weight: bold;
+               color: #3A5BCC;
+          }
+
+          .span_select_your_course{
+               position: absolute;
+               top: 300%;
+               left: 9%;
+               font-size: 18px;
+               line-height: 25px;
+               font-family: 'Montserrat', sans-serif;
+               color: #000000;
+          }
+
+          .frame_02{
+               position: absolute;
+               top: 270%;
+               left: 30%;
+               background-color: #3A5BCC;
+               border-radius: 15px;
+               border-width: 0px;
+          }
+
+          .span_02{
+               position: absolute;
+               top: 272.5%;
+               left: 31.1%;
+               font-size: 28px;
+               font-family: 'Montserrat', sans-serif;
+               font-weight: bold;
+               color: #ffffff;
+          }
+
+          .h1_register_and_enroll{
+               position: absolute;
+               top: 282%;
+               left: 30%;
+               font-family: 'Montserrat', sans-serif;
+               font-weight: bold;
+               color: #3A5BCC;
+          }
+
+          .span_register_and_enroll{
+               position: absolute;
+               top: 300%;
+               left: 30%;
+               font-size: 18px;
+               line-height: 25px;
+               font-family: 'Montserrat', sans-serif;
+               color: #000000;
+          }
+
+          .frame_03{
+               position: absolute;
+               top: 270%;
+               left: 52%;
+               background-color: #3A5BCC;
+               border-radius: 15px;
+               border-width: 0px;
+          }
+
+          .span_03{
+               position: absolute;
+               top: 272.5%;
+               left: 53%;
+               font-size: 28px;
+               font-family: 'Montserrat', sans-serif;
+               font-weight: bold;
+               color: #ffffff;
+          }
+
+          .h1_interact_with_your_instructor{
+               position: absolute;
+               top: 282%;
+               left: 52%;
+               font-family: 'Montserrat', sans-serif;
+               font-weight: bold;
+               color: #3A5BCC;
+          }
+
+          .span_interact_with_your_instructor{
+               position: absolute;
+               top: 307%;
+               left: 52%;
+               font-size: 18px;
+               line-height: 25px;
+               font-family: 'Montserrat', sans-serif;
+               color: #000000;
+          }
+
+          .frame_04{
+               position: absolute;
+               top: 270%;
+               left: 77%;
+               background-color: #3A5BCC;
+               border-radius: 15px;
+               border-width: 0px;
+          }
+
+          .span_04{
+               position: absolute;
+               top: 272.5%;
+               left: 78%;
+               font-size: 28px;
+               font-family: 'Montserrat', sans-serif;
+               font-weight: bold;
+               color: #ffffff;
+          }
+
+          .h1_learn_at_your_pace{
+               position: absolute;
+               top: 282%;
+               left: 77%;
+               font-family: 'Montserrat', sans-serif;
+               font-weight: bold;
+               color: #3A5BCC;
+          }
+
+          .span_learn_at_your_pace{
+               position: absolute;
+               top: 300%;
+               left: 77%;
+               font-size: 18px;
+               line-height: 25px;
+               font-family: 'Montserrat', sans-serif;
+               color: #000000;
+          }
+
+          .end_div_page_f{
+               position: absolute;
+               top: 350%;
+               width: 100%;
+               height: 450px;
+               background-color: #000000;
+          }
+
+          .self_school_in_end_f{
+               position: absolute;
+               top: 120px;
+               left: 12%;
+               color: #ffffff;
+               font-size: 22px;
+               font-weight: bold;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .facebook_end{
+               position: absolute;
+               top: 33%;
+               left: 10.7%;
+          }
+
+          .instagram_end{
+               position: absolute;
+               top: 33%;
+               left: 14.7%;
+          }
+
+          .telegram_end{
+               position: absolute;
+               top: 33%;
+               left: 18.7%;
+          }
+
+          .pages-span{
+               position: absolute;
+               top: 122px;
+               left: 550px;
+               color: #ffffff;
+               font-size: 22px;
+               font-weight: bold;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .about_us_end{
+               position: absolute;
+               color: #ffffff;
+               top: 180px;
+               left: 570px;
+               font-size: 20px;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .classes_end{
+               position: absolute;
+               color: #ffffff;
+               top: 225px;
+               left: 570px;
+               font-size: 20px;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .teachers_end{
+               position: absolute;
+               color: #ffffff;
+               top: 270px;
+               left: 570px;
+               font-size: 20px;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .FAQ_end{
+               position: absolute;
+               color: #ffffff;
+               top: 315px;
+               left: 570px;
+               font-size: 20px;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .contact_us_end{
+               position: absolute;
+               color: #ffffff;
+               top: 360px;
+               left: 570px;
+               font-size: 20px;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .main_contact_end{
+               position: absolute;
+               top: 122px;
+               left: 885px;
+               color: #ffffff;
+               font-size: 22px;
+               font-weight: bold;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .number_end{
+               position: absolute;
+               color: #ffffff;
+               top: 180px;
+               left: 940px;
+               font-size: 20px;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .time_work_end{
+               position: absolute;
+               color: #ffffff;
+               top: 230px;
+               left: 940px;
+               font-size: 20px;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .email_end{
+               position: absolute;
+               color: #ffffff;
+               top: 280px;
+               left: 940px;
+               font-size: 20px;
+               font-family: 'Montserrat', sans-serif;
+          }
+
+          .phone_end{
+               position: absolute;
+               top: 167px;
+               left: 885px;
+          }
+
+          .clock_end{
+               position: absolute;
+               top: 215px;
+               left: 885px;
+          }
+
+          .email_end_logo{
+               position: absolute;
+               top: 275px;
+               left: 895px;
+          }
+
+          .a_self_school_span{
+               color: #000000;
+          }
+     </style>
+
+     {% include 'sch/base.html' with color_faq_selected="blue" %}
+     <div class="faq_main_photo_div">
+          <img class="faq_main_photo" src="static/image/main_faq.jpeg" width="1348px" height="290px" alt="classes main">
+          <h1 class="h1_faq_in_main_photo">Питання, що часто задають</h1>
+     </div>
+     <div class="fags-div">
+          <h4 class="h4_faqs">FAQs</h4>
+          <h1 class="h1_frequently_asked_questions">Питання що часто задаються</h1>
+     </div>
+     <ul id="accordion">
+          <li class="li_accordion">
+               <label class="label_first" for="first">Якої підтримки студенти можуть <br> очікувати від Self School?<span>&#x3e;</span></label>
+               <input type="radio" name="accordion" id="first" checked>
+               <div class="content">
+                    <p>У Self School ми надаємо індивідуальну <br>
+                         підтримку всім нашим учням, включаючи <br>
+                         експертне керівництво від інструкторів, <br>
+                         детальні відгуки про завдання та доступ <br>
+                         до спільноти тих, хто навчається.</p>
+               </div>
+          </li>
+
+          <li>
+               <label for="second">Яка тривалість ваших <br> курсів?<span>&#x3e;</span></label>
+               <input type="radio" name="accordion" id="second">
+               <div class="content">
+                    <p>Тривалість наших курсів залежить від <br>
+                         програми, але більшість курсів  <br>
+                         тривають від 3 до 6 місяців. Ми <br>
+                         також пропонуємо гнучкі варіанти <br>
+                         розкладу, щоб пристосуватися до <br>
+                         насиченого життя наших студентів.</p>
+               </div>
+          </li>
+
+          <li>
+               <label for="third">Чи пропонуєте ви допомогу в <br> працевлаштуванні?<span>&#x3e;</span></label>
+               <input class="input" type="radio" name="accordion" id="third">
+               <div class="content">
+                    <p>Хоча ми не пропонуємо послуг з <br>
+                         працевлаштування, ми надаємо <br>
+                         нашим студентам навички та знання, <br>
+                         необхідні для того, щоб виділитися <br>
+                         в обраній ними сфері. Наші курси <br>
+                         розроблені, щоб допомогти студентам <br>
+                         створити потужне портфоліо та  <br>
+                         розвинути професійну мережу, яка  <br>
+                         допоможе їм у пошуку роботи.</p>
+               </div>
+          </li>
+     </ul>
+
+     <ul id="accordion_two">
+          <li>
+               <label for="first_2">Які технології мені потрібні, <br> щоб відвідувати ваші курси?<span>&#x3e;</span></label>
+               <input type="radio" name="accordion_two" id="first_2">
+               <div class="content_first_2">
+                    <p>
+                         Щоб пройти наші курси, вам знадобиться <br>
+                         комп’ютер із надійним підключенням до  <br>
+                         Інтернету, а також будь-яке програмне <br>
+                         забезпечення чи інструменти, зазначені <br>
+                         в описі курсу. Ми надаємо детальні  <br>
+                         технологічні вимоги для кожного курсу, <br>
+                         щоб наші учні мали все необхідне для <br>
+                         досягнення успіху.
+                    </p>
+               </div>
+          </li>
+
+          <li>
+               <label for="second_2">Чи можу я отримати відшкодування, <br> якщо я не задоволений курсом?<span>&#x3e;</span></label>
+               <input type="radio" name="accordion_two" id="second_2">
+               <div class="content_first_2">
+                    <p>
+                         Ми пропонуємо 7-денну гарантію повернення <br>
+                         грошей для всіх наших курсів. Якщо ви не <br>
+                         задоволені курсом, просто зв’яжіться з  <br>
+                         нами протягом 7 днів реєстрація, і ми <br>
+                         повністю відшкодуємо кошти.
+                    </p>
+               </div>
+          </li>
+
+          <li>
+               <label for="third_2">Чи пропонуєте ви стипендії чи <br> фінансову допомогу?<span>&#x3e;</span></label>
+               <input type="radio" name="accordion_two" id="third_2">
+               <div class="content_first_2">
+                    <p>
+                         Зараз ми не пропонуємо стипендій чи <br>
+                         фінансової допомоги, але ми прагнемо, <br>
+                         щоб наші курси були доступними для  <br>
+                         всіх учнів. Ми також пропонуємо гнучкі <br>
+                         плани оплати, щоб зробити наші курси <br>
+                         більш доступними для наших студентів.
+                    </p>
+               </div>
+          </li>
+     </ul>
+     
+     <div class="how_its_work">
+          <h4 class="h4_how_it_works">Як це працює</h4>
+          <h1 class="h1_our_learning_process">Наш процес навчання</h1>
+
+          <iframe class="frame_01" width="65px" height="65px"></iframe>
+          <span class="span_01">01</span>
+          <h1 class="h1_select_your_course">Виберіть свій <br> курс</h1>
+          <span class="span_select_your_course">Виберіть курс, який <br>
+               найкраще відповідає <br>
+               вашим інтересам і  <br>
+               цілям із нашого  <br>
+               широкого спектру  <br>
+               варіантів, пристосовуючи <br>
+               ваш досвід навчання  <br>
+               до ваших потреби</span>
+
+          <iframe class="frame_02" width="65px" height="65px"></iframe>
+          <span class="span_02">02</span>
+          <h1 class="h1_register_and_enroll">Реєстрація та <br> зарахування</h1>
+          <span class="span_register_and_enroll">Завершіть процес <br>
+               реєстрації та запишіться <br> 
+               на бажаний курс, щоб <br> 
+               розпочати навчання з <br>
+               нами</span>
+
+          <iframe class="frame_03" width="65px" height="65px"></iframe>
+          <span class="span_03">03</span>
+          <h1 class="h1_interact_with_your_instructor">Спілкуйтеся зі <br> своїм <br> інструктором</h1>
+          <span class="span_interact_with_your_instructor">Візьміть участь в <br>
+               інтерактивних сесіях зі <br>
+               своїм інструктором, щоб <br>
+               отримати персональні <br>
+               відгуки, вказівки  <br>
+               та підтримку, покращуючи <br>
+               ваш досвід навчання <br>
+               та прогрес</span>
+
+          <iframe class="frame_04" width="65px" height="65px"></iframe>
+          <span class="span_04">04</span>
+          <h1 class="h1_learn_at_your_pace">Навчайтеся у своєму темпі</h1>
+          <span class="span_learn_at_your_pace">Наші самостійні курси <br>
+               дозволяють вам навчатися <br>
+               у своєму власному темпі, <br>
+               забезпечуючи вам гнучкість <br>
+               і свободу навчатися <br>
+               будь-коли і де завгодно</span>
+
+     </div>
+
+     {% include "sch/end_div.html" with classes_for_faq="trues" %}
+
+</body>
+</html>
